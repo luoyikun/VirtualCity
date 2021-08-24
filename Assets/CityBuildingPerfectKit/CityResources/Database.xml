@@ -1,0 +1,97 @@
+<Database>
+  <ConfigVersion value="1" />
+  <Building>
+    <BuildingType ID="0" Name="Prop_Couch" Info="" TileX="2" TileZ="4" LevelMax="5" Category="0" MaxCount="1,1,1,1,1,1,1,1,1,1">
+      <BuildingDef HitPoint="1500" BuildPrice="0,0,0" BuildTime="0" TownHallLevelRequired="0">
+        <Capacity Gold="1000" Elixir="1000" />
+      </BuildingDef>
+      <BuildingDef HitPoint="1600" BuildPrice="1000,0,0" BuildTime="10" TownHallLevelRequired="1">
+        <Capacity Gold="1000" Elixir="1000" />
+      </BuildingDef>
+      <BuildingDef HitPoint="1850" BuildPrice="4000,0,0" BuildTime="10800" TownHallLevelRequired="2">
+        <Capacity Gold="1000" Elixir="1000" />
+      </BuildingDef>
+    </BuildingType>
+    <BuildingType ID="1" Name="Hut" Info="" TileX="1" TileZ="1" LevelMax="1" Category="0" MaxCount="0,0,0,0,0,0,0,0,0,0">
+      <BuildingDef HitPoint="250" BuildPrice="0,0,800" BuildTime="0" TownHallLevelRequired="0" />
+    </BuildingType>
+    <BuildingType ID="2" Name="Wall" Info="" TileX="1" TileZ="1" LevelMax="11" Category="0" MaxCount="0,25,50,75,100,125,175,225,250,250">
+      <BuildingDef HitPoint="300" BuildPrice="50,0,0" BuildTime="0" TownHallLevelRequired="2" />
+      <BuildingDef HitPoint="500" BuildPrice="1000,0,0" BuildTime="0" TownHallLevelRequired="2" />
+      <BuildingDef HitPoint="700" BuildPrice="5000,0,0" BuildTime="0" TownHallLevelRequired="3" />
+    </BuildingType>
+    <BuildingType ID="3" Name="Gold Mine" Info="" TileX="3" TileZ="3" LevelMax="12" Category="0" MaxCount="1,2,3,4,5,6,6,6,6,7">
+      <BuildingDef HitPoint="400" BuildPrice="0,150,0" BuildTime="10" TownHallLevelRequired="1">
+        <Capacity Gold="500" Elixir="0" />
+        <Production Type="Gold" ProductionRate="0.05555556" />
+      </BuildingDef>
+      <BuildingDef HitPoint="440" BuildPrice="0,300,0" BuildTime="60" TownHallLevelRequired="1">
+        <Capacity Gold="1000" Elixir="0" />
+        <Production Type="Gold" ProductionRate="0.1111111" />
+      </BuildingDef>
+      <BuildingDef HitPoint="480" BuildPrice="0,700,0" BuildTime="900" TownHallLevelRequired="2">
+        <Capacity Gold="1500" Elixir="0" />
+        <Production Type="Gold" ProductionRate="0.1666667" />
+      </BuildingDef>
+    </BuildingType>
+    <BuildingType ID="4" Name="Elixir Collector" Info="" TileX="3" TileZ="3" LevelMax="12" Category="0" MaxCount="1,2,3,4,5,6,6,6,6,7">
+      <BuildingDef HitPoint="400" BuildPrice="150,0,0" BuildTime="10" TownHallLevelRequired="1">
+        <Capacity Gold="0" Elixir="500" />
+        <Production Type="Elixir" ProductionRate="0.05555556" />
+      </BuildingDef>
+      <BuildingDef HitPoint="440" BuildPrice="300,0,0" BuildTime="60" TownHallLevelRequired="1">
+        <Capacity Gold="0" Elixir="1000" />
+        <Production Type="Elixir" ProductionRate="0.1111111" />
+      </BuildingDef>
+      <BuildingDef HitPoint="480" BuildPrice="700,0,0" BuildTime="900" TownHallLevelRequired="2">
+        <Capacity Gold="0" Elixir="1500" />
+        <Production Type="Elixir" ProductionRate="0.1666667" />
+      </BuildingDef>
+    </BuildingType>
+    <BuildingType ID="5" Name="Gold Storage" Info="" TileX="3" TileZ="3" LevelMax="11" Category="0" MaxCount="1,1,2,2,2,2,2,3,4,4">
+      <BuildingDef HitPoint="400" BuildPrice="0,300,0" BuildTime="10" TownHallLevelRequired="1">
+        <Capacity Gold="1000" Elixir="0" />
+      </BuildingDef>
+      <BuildingDef HitPoint="600" BuildPrice="0,750,0" BuildTime="1800" TownHallLevelRequired="2">
+        <Capacity Gold="3000" Elixir="0" />
+      </BuildingDef>
+      <BuildingDef HitPoint="800" BuildPrice="0,1500,0" BuildTime="3600" TownHallLevelRequired="2">
+        <Capacity Gold="61000" Elixir="0" />
+      </BuildingDef>
+    </BuildingType>
+    <BuildingType ID="6" Name="Elixir Storage" Info="" TileX="3" TileZ="3" LevelMax="11" Category="0" MaxCount="1,1,2,2,2,2,2,3,4,4">
+      <BuildingDef HitPoint="400" BuildPrice="300,0,0" BuildTime="10" TownHallLevelRequired="1">
+        <Capacity Gold="0" Elixir="1000" />
+      </BuildingDef>
+      <BuildingDef HitPoint="600" BuildPrice="750,0,0" BuildTime="1800" TownHallLevelRequired="2">
+        <Capacity Gold="0" Elixir="3000" />
+      </BuildingDef>
+      <BuildingDef HitPoint="800" BuildPrice="1500,0,0" BuildTime="3600" TownHallLevelRequired="2">
+        <Capacity Gold="0" Elixir="6000" />
+      </BuildingDef>
+    </BuildingType>
+    <BuildingType ID="7" Name="Barrack" Info="" TileX="3" TileZ="3" LevelMax="10" Category="0" MaxCount="1,2,2,3,3,3,4,4,4,4">
+      <BuildingDef HitPoint="250" BuildPrice="0,200,0" BuildTime="10" TownHallLevelRequired="1" />
+    </BuildingType>
+    <BuildingType ID="8" Name="Army Camp" Info="" TileX="4" TileZ="4" LevelMax="8" Category="0" MaxCount="1,1,2,2,3,3,4,4,4,4">
+      <BuildingDef HitPoint="250" BuildPrice="0,250,0" BuildTime="300" TownHallLevelRequired="1" />
+      <BuildingDef HitPoint="270" BuildPrice="0,2500,0" BuildTime="3600" TownHallLevelRequired="2" />
+      <BuildingDef HitPoint="290" BuildPrice="0,10000,0" BuildTime="10800" TownHallLevelRequired="3" />
+      <BuildingDef HitPoint="310" BuildPrice="0,100000,0" BuildTime="28800" TownHallLevelRequired="4" />
+      <BuildingDef HitPoint="330" BuildPrice="0,250000,0" BuildTime="86400" TownHallLevelRequired="5" />
+      <BuildingDef HitPoint="350" BuildPrice="0,750000,0" BuildTime="259200" TownHallLevelRequired="6" />
+      <BuildingDef HitPoint="400" BuildPrice="0,2250000,0" BuildTime="432000" TownHallLevelRequired="9" />
+      <BuildingDef HitPoint="500" BuildPrice="0,6750000,0" BuildTime="864000" TownHallLevelRequired="10" />
+    </BuildingType>
+    <BuildingType ID="9" Name="Cannon" Info="" TileX="2" TileZ="2" LevelMax="13" Category="0" MaxCount="2,2,2,2,3,3,5,5,5,6">
+      <BuildingDef HitPoint="420" BuildPrice="250,0,0" BuildTime="10" TownHallLevelRequired="1" />
+      <BuildingDef HitPoint="470" BuildPrice="1000,0,0" BuildTime="900" TownHallLevelRequired="1" />
+      <BuildingDef HitPoint="520" BuildPrice="4000,0,0" BuildTime="2700" TownHallLevelRequired="2" />
+    </BuildingType>
+    <BuildingType ID="10" Name="Archer Tower" Info="" TileX="2" TileZ="2" LevelMax="13" Category="0" MaxCount="0,1,1,2,3,3,4,5,6,7">
+      <BuildingDef HitPoint="380" BuildPrice="1000,0,0" BuildTime="60" TownHallLevelRequired="2" />
+      <BuildingDef HitPoint="420" BuildPrice="2000,0,0" BuildTime="1800" TownHallLevelRequired="2" />
+      <BuildingDef HitPoint="460" BuildPrice="5000,0,0" BuildTime="2700" TownHallLevelRequired="3" />
+    </BuildingType>
+  </Building>
+</Database>

@@ -1,0 +1,2761 @@
+fileFormatVersion: 2
+guid: 521461ba8e1615746be6cfb7f61194ad
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Object009
+    100002: //RootNode
+    100004: SYJ_jianzhu01
+    100006: SYJ_jianzhu02
+    100008: SYJ_jianzhu03
+    100010: SYJ_jianzhu04
+    100012: SYJ_jianzhu05
+    100014: SYJ_jianzhu06
+    100016: SYJ_jianzhu07
+    100018: SYJ_jianzhu08
+    100020: SYJ_jianzhu09
+    100022: SYJ_jianzhu10
+    100024: SYJ_jianzhu11
+    100026: SYJ_renxingdao01
+    100028: SYJ_renxingdao02
+    100030: SYJ_yuanjing01
+    100032: Box002
+    100034: Group001
+    100036: Group002
+    100038: Group003
+    100040: Group004
+    100042: Group005
+    100044: Group006
+    100046: Group007
+    100048: Group008
+    100050: Group009
+    100052: Group010
+    100054: Group011
+    100056: Object001
+    100058: Object005
+    100060: Object006
+    100062: Object008
+    100064: Object010
+    100066: Object011
+    100068: Object015
+    100070: Object016
+    100072: Object018
+    100074: Object025
+    100076: Object026
+    100078: Object027
+    100080: Rectangle001
+    100082: Rectangle002
+    100084: Rectangle003
+    100086: Rectangle004
+    100088: Rectangle005
+    100090: Rectangle006
+    100092: s4studio_mesh_0
+    100094: s4studio_mesh_0 1
+    100096: s4studio_mesh_0 2
+    100098: s4studio_mesh_0 3
+    100100: s4studio_mesh_0 4
+    100102: s4studio_mesh_0 5
+    100104: s4studio_mesh_0 6
+    100106: s4studio_mesh_0 7
+    100108: s4studio_mesh_003
+    100110: s4studio_mesh_004
+    100112: s4studio_mesh_005
+    100114: s4studio_mesh_006
+    100116: s4studio_mesh_007
+    100118: s4studio_mesh_008
+    100120: s4studio_mesh_009
+    100122: s4studio_mesh_010
+    100124: s4studio_mesh_011
+    100126: s4studio_mesh_012
+    100128: s4studio_mesh_013
+    100130: s4studio_mesh_014
+    100132: s4studio_mesh_015
+    100134: s4studio_mesh_016
+    100136: s4studio_mesh_017
+    100138: s4studio_mesh_018
+    100140: s4studio_mesh_019
+    100142: s4studio_mesh_020
+    100144: s4studio_mesh_021
+    100146: s4studio_mesh_022
+    100148: s4studio_mesh_023
+    100150: s4studio_mesh_024
+    100152: s4studio_mesh_025
+    100154: s4studio_mesh_026
+    100156: s4studio_mesh_027
+    100158: s4studio_mesh_028
+    100160: s4studio_mesh_030
+    100162: s4studio_mesh_031
+    100164: s4studio_mesh_032
+    100166: s4studio_mesh_033
+    100168: s4studio_mesh_034
+    100170: s4studio_mesh_035
+    100172: s4studio_mesh_036
+    100174: s4studio_mesh_037
+    100176: s4studio_mesh_038
+    100178: s4studio_mesh_039
+    100180: s4studio_mesh_040
+    100182: s4studio_mesh_041
+    100184: s4studio_mesh_042
+    100186: s4studio_mesh_043
+    100188: s4studio_mesh_044
+    100190: s4studio_mesh_045
+    100192: s4studio_mesh_051
+    100194: s4studio_mesh_052
+    100196: s4studio_mesh_053
+    100198: s4studio_mesh_054
+    100200: s4studio_mesh_055
+    100202: s4studio_mesh_056
+    100204: s4studio_mesh_057
+    100206: s4studio_mesh_058
+    100208: s4studio_mesh_059
+    100210: s4studio_mesh_060
+    100212: s4studio_mesh_061
+    100214: s4studio_mesh_062
+    100216: s4studio_mesh_063
+    100218: s4studio_mesh_064
+    100220: s4studio_mesh_065
+    100222: s4studio_mesh_1
+    100224: s4studio_mesh_1 1
+    100226: s4studio_mesh_1 2
+    100228: s4studio_mesh_1 3
+    100230: s4studio_mesh_1 4
+    100232: s4studio_mesh_1 5
+    100234: s4studio_mesh_1 6
+    100236: s4studio_mesh_1 7
+    100238: s4studio_mesh_1 8
+    100240: s4studio_mesh_2
+    100242: s4studio_mesh_2 1
+    100244: s4studio_mesh_2 2
+    100246: s4studio_mesh_2 3
+    100248: s4studio_mesh_2 4
+    100250: Object028
+    100252: Object031
+    100254: s4studio_mesh_066
+    100256: s4studio_mesh_067
+    100258: s4studio_mesh_068
+    100260: s4studio_mesh_069
+    100262: Group023
+    100264: Group024
+    100266: Group025
+    100268: Group026
+    100270: Group027
+    100272: Group028
+    100274: Group029
+    100276: Group030
+    100278: Group031
+    100280: Group032
+    100282: Group033
+    100284: Object053
+    100286: Object054
+    100288: Object055
+    100290: Object056
+    100292: Object057
+    100294: Object058
+    100296: Object059
+    100298: Object060
+    100300: Object061
+    100302: Object062
+    100304: Object063
+    100306: Object064
+    100308: Object065
+    100310: Object066
+    100312: Object067
+    100314: Rectangle013
+    100316: Rectangle014
+    100318: Rectangle015
+    100320: Rectangle016
+    100322: Rectangle017
+    100324: Rectangle018
+    100326: s4studio_mesh_157
+    100328: s4studio_mesh_158
+    100330: s4studio_mesh_159
+    100332: s4studio_mesh_160
+    100334: s4studio_mesh_161
+    100336: s4studio_mesh_162
+    100338: s4studio_mesh_163
+    100340: s4studio_mesh_164
+    100342: s4studio_mesh_165
+    100344: s4studio_mesh_166
+    100346: s4studio_mesh_167
+    100348: s4studio_mesh_168
+    100350: s4studio_mesh_169
+    100352: s4studio_mesh_170
+    100354: s4studio_mesh_171
+    100356: s4studio_mesh_172
+    100358: s4studio_mesh_173
+    100360: s4studio_mesh_174
+    100362: s4studio_mesh_175
+    100364: s4studio_mesh_176
+    100366: s4studio_mesh_177
+    100368: s4studio_mesh_178
+    100370: s4studio_mesh_179
+    100372: s4studio_mesh_180
+    100374: s4studio_mesh_181
+    100376: s4studio_mesh_182
+    100378: s4studio_mesh_183
+    100380: s4studio_mesh_184
+    100382: s4studio_mesh_185
+    100384: s4studio_mesh_186
+    100386: s4studio_mesh_187
+    100388: s4studio_mesh_188
+    100390: s4studio_mesh_189
+    100392: s4studio_mesh_190
+    100394: s4studio_mesh_191
+    100396: s4studio_mesh_192
+    100398: s4studio_mesh_193
+    100400: s4studio_mesh_194
+    100402: s4studio_mesh_195
+    100404: s4studio_mesh_196
+    100406: s4studio_mesh_197
+    100408: s4studio_mesh_198
+    100410: s4studio_mesh_199
+    100412: s4studio_mesh_200
+    100414: s4studio_mesh_201
+    100416: s4studio_mesh_202
+    100418: s4studio_mesh_203
+    100420: s4studio_mesh_204
+    100422: s4studio_mesh_205
+    100424: s4studio_mesh_206
+    100426: s4studio_mesh_207
+    100428: s4studio_mesh_208
+    100430: s4studio_mesh_209
+    100432: s4studio_mesh_210
+    100434: s4studio_mesh_211
+    100436: s4studio_mesh_212
+    100438: s4studio_mesh_213
+    100440: s4studio_mesh_214
+    100442: s4studio_mesh_215
+    100444: s4studio_mesh_216
+    100446: s4studio_mesh_217
+    100448: s4studio_mesh_218
+    100450: s4studio_mesh_219
+    100452: s4studio_mesh_220
+    100454: s4studio_mesh_221
+    100456: s4studio_mesh_222
+    100458: s4studio_mesh_223
+    100460: s4studio_mesh_224
+    100462: s4studio_mesh_225
+    100464: Group035
+    100466: Group036
+    100468: Group037
+    100470: Group038
+    100472: Group039
+    100474: Group040
+    100476: Group041
+    100478: Group042
+    100480: Group043
+    100482: Group044
+    100484: Group045
+    100486: Object068
+    100488: Object069
+    100490: Object070
+    100492: Object071
+    100494: Object072
+    100496: Object073
+    100498: Object074
+    100500: Object075
+    100502: Object076
+    100504: Object077
+    100506: Object078
+    100508: Object079
+    100510: Object080
+    100512: Object081
+    100514: Object082
+    100516: Rectangle019
+    100518: Rectangle020
+    100520: Rectangle021
+    100522: Rectangle022
+    100524: Rectangle023
+    100526: Rectangle024
+    100528: s4studio_mesh_226
+    100530: s4studio_mesh_227
+    100532: s4studio_mesh_228
+    100534: s4studio_mesh_229
+    100536: s4studio_mesh_230
+    100538: s4studio_mesh_231
+    100540: s4studio_mesh_232
+    100542: s4studio_mesh_233
+    100544: s4studio_mesh_234
+    100546: s4studio_mesh_235
+    100548: s4studio_mesh_236
+    100550: s4studio_mesh_237
+    100552: s4studio_mesh_238
+    100554: s4studio_mesh_239
+    100556: s4studio_mesh_240
+    100558: s4studio_mesh_241
+    100560: s4studio_mesh_242
+    100562: s4studio_mesh_243
+    100564: s4studio_mesh_244
+    100566: s4studio_mesh_245
+    100568: s4studio_mesh_246
+    100570: s4studio_mesh_247
+    100572: s4studio_mesh_248
+    100574: s4studio_mesh_249
+    100576: s4studio_mesh_250
+    100578: s4studio_mesh_251
+    100580: s4studio_mesh_252
+    100582: s4studio_mesh_253
+    100584: s4studio_mesh_254
+    100586: s4studio_mesh_255
+    100588: s4studio_mesh_256
+    100590: s4studio_mesh_257
+    100592: s4studio_mesh_258
+    100594: s4studio_mesh_259
+    100596: s4studio_mesh_260
+    100598: s4studio_mesh_261
+    100600: s4studio_mesh_262
+    100602: s4studio_mesh_263
+    100604: s4studio_mesh_264
+    100606: s4studio_mesh_265
+    100608: s4studio_mesh_266
+    100610: s4studio_mesh_267
+    100612: s4studio_mesh_268
+    100614: s4studio_mesh_269
+    100616: s4studio_mesh_270
+    100618: s4studio_mesh_271
+    100620: s4studio_mesh_272
+    100622: s4studio_mesh_273
+    100624: s4studio_mesh_274
+    100626: s4studio_mesh_275
+    100628: s4studio_mesh_276
+    100630: s4studio_mesh_277
+    100632: s4studio_mesh_278
+    100634: s4studio_mesh_279
+    100636: s4studio_mesh_280
+    100638: s4studio_mesh_281
+    100640: s4studio_mesh_282
+    100642: s4studio_mesh_283
+    100644: s4studio_mesh_284
+    100646: s4studio_mesh_285
+    100648: s4studio_mesh_286
+    100650: s4studio_mesh_287
+    100652: s4studio_mesh_288
+    100654: s4studio_mesh_289
+    100656: s4studio_mesh_290
+    100658: s4studio_mesh_291
+    100660: s4studio_mesh_292
+    100662: s4studio_mesh_293
+    100664: s4studio_mesh_294
+    100666: Object089
+    100668: SYJ_jiajudian01
+    100670: SYJ_jiajudian01 1
+    100672: baobian
+    100674: Circle001
+    100676: Circle002
+    100678: Circle004
+    100680: Object007
+    100682: sjy_zxdibiao02
+    100684: sjy_zxdibiao03
+    100686: syj_caodi01
+    100688: ' 1'
+    100690: sjy_zxdibiao06
+    100692: sjy_zxdibiao07
+    100694: sjy_zxdibiao08
+    100696: Object021
+    100698: Object022
+    100700: sjy_zxdibiao004
+    100702: batai
+    100704: bataiyi
+    100706: boli
+    100708: boli 1
+    100710: boli 2
+    100712: dimian
+    100714: dimian 1
+    100716: dimian 2
+    100718: erlou
+    100720: erlou 1
+    100722: erlou 2
+    100724: jiugui
+    100726: meng
+    100728: meng 1
+    100730: meng 2
+    100732: Object013
+    100734: Object014
+    100736: qiantai
+    100738: shafa
+    100740: xiegui_1
+    100742: xiegui_2
+    100744: yifu_1
+    100746: yifu_2
+    100748: yifu_3
+    100750: yifu_4
+    100752: yijia_1
+    100754: yijia_2
+    100756: yijia_3
+    100758: yilou
+    100760: yilou 1
+    100762: yilou 2
+    100764: yuanzhuo
+    100766: yuanzhuoyi
+    100768: zhantai
+    100770: zhuozi
+    100772: syj_zxlangan01
+    100774: arch20_027_07
+    100776: arch20_027_07 1
+    100778: arch24_027_01
+    100780: arch24_028_01
+    100782: arch24_036_00
+    100784: arch24_037_00
+    100786: arch24_042_00
+    100788: arch24_043_00
+    100790: arch24_044_00
+    100792: arch24_044_00 1
+    100794: arch24_045_00
+    100796: arch24_045_00 1
+    100798: arch24_045_00 2
+    100800: arch24_045_00 3
+    100802: arch24_045_02
+    100804: arch24_045_02 1
+    100806: arch24_045_02 2
+    100808: arch24_045_02 3
+    100810: arch24_045_04
+    100812: arch24_045_04 1
+    100814: arch24_045_04 2
+    100816: arch24_045_04 3
+    100818: arch24_051_01
+    100820: arch24_051_01 1
+    100822: arch24_052_00
+    100824: arch24_052_00 1
+    100826: arch24_052_01
+    100828: arch24_052_01 1
+    100830: arch24_052_02
+    100832: arch24_052_02 1
+    100834: arch24_057_00
+    100836: arch24_057_00 1
+    100838: arch24_057_00 2
+    100840: arch24_057_00 3
+    100842: arch24_058_00
+    100844: arch24_058_00 1
+    100846: arch24_059_00
+    100848: arch24_062_00
+    100850: arch24_062_00 1
+    100852: arch24_062_00 10
+    100854: arch24_062_00 11
+    100856: arch24_062_00 12
+    100858: arch24_062_00 13
+    100860: arch24_062_00 14
+    100862: arch24_062_00 15
+    100864: arch24_062_00 2
+    100866: arch24_062_00 3
+    100868: arch24_062_00 4
+    100870: arch24_062_00 5
+    100872: arch24_062_00 6
+    100874: arch24_062_00 7
+    100876: arch24_062_00 8
+    100878: arch24_062_00 9
+    100880: arch24_062_01
+    100882: arch24_062_01 1
+    100884: arch24_062_01 10
+    100886: arch24_062_01 11
+    100888: arch24_062_01 12
+    100890: arch24_062_01 13
+    100892: arch24_062_01 14
+    100894: arch24_062_01 15
+    100896: arch24_062_01 2
+    100898: arch24_062_01 3
+    100900: arch24_062_01 4
+    100902: arch24_062_01 5
+    100904: arch24_062_01 6
+    100906: arch24_062_01 7
+    100908: arch24_062_01 8
+    100910: arch24_062_01 9
+    100912: arch24_063_05
+    100914: arch24_063_05 1
+    100916: arch24_063_05 10
+    100918: arch24_063_05 11
+    100920: arch24_063_05 12
+    100922: arch24_063_05 13
+    100924: arch24_063_05 14
+    100926: arch24_063_05 15
+    100928: arch24_063_05 2
+    100930: arch24_063_05 3
+    100932: arch24_063_05 4
+    100934: arch24_063_05 5
+    100936: arch24_063_05 6
+    100938: arch24_063_05 7
+    100940: arch24_063_05 8
+    100942: arch24_063_05 9
+    100944: Arch46_057_1
+    100946: Arch46_057_1 1
+    100948: Arch46_057_1 2
+    100950: Arch46_057_1 3
+    100952: ArchInteriors_12_01_obj_337
+    100954: ArchInteriors_12_01_obj_338
+    100956: ArchInteriors_12_07_obj_21
+    100958: ArchInteriors_12_07_obj_22
+    100960: ArchInteriors_12_07_obj_23
+    100962: ArchInteriors_12_07_obj_24
+    100964: ArchInteriors_12_07_obj_242
+    100966: ArchInteriors_12_07_obj_243
+    100968: ArchInteriors_12_07_obj_244
+    100970: ArchInteriors_12_07_obj_245
+    100972: ArchInteriors_12_07_obj_246
+    100974: ArchInteriors_12_07_obj_247
+    100976: ArchInteriors_12_07_obj_248
+    100978: ArchInteriors_12_07_obj_249
+    100980: ArchInteriors_12_07_obj_25
+    100982: ArchInteriors_12_07_obj_250
+    100984: ArchInteriors_12_07_obj_251
+    100986: ArchInteriors_12_07_obj_252
+    100988: ArchInteriors_12_07_obj_253
+    100990: ArchInteriors_12_07_obj_255
+    100992: ArchInteriors_12_07_obj_256
+    100994: ArchInteriors_12_07_obj_26
+    100996: ArchInteriors_12_07_obj_27
+    100998: ArchInteriors_12_07_obj_28
+    101000: ArchInteriors_12_07_obj_29
+    101002: ArchInteriors_12_07_obj_30
+    101004: ArchInteriors_12_07_obj_31
+    101006: ArchInteriors_12_07_obj_32
+    101008: ArchInteriors_12_07_obj_33
+    101010: ArchInteriors_12_07_obj_34
+    101012: fridge_008_54
+    101014: Particle View 002
+    101016: Particle View 002 1
+    101018: Particle View 002 10
+    101020: Particle View 002 11
+    101022: Particle View 002 12
+    101024: Particle View 002 13
+    101026: Particle View 002 14
+    101028: Particle View 002 15
+    101030: Particle View 002 16
+    101032: Particle View 002 17
+    101034: Particle View 002 18
+    101036: Particle View 002 19
+    101038: Particle View 002 2
+    101040: Particle View 002 20
+    101042: Particle View 002 21
+    101044: Particle View 002 22
+    101046: Particle View 002 23
+    101048: Particle View 002 24
+    101050: Particle View 002 25
+    101052: Particle View 002 26
+    101054: Particle View 002 3
+    101056: Particle View 002 4
+    101058: Particle View 002 5
+    101060: Particle View 002 6
+    101062: Particle View 002 7
+    101064: Particle View 002 8
+    101066: Particle View 002 9
+    101068: Particle View 01
+    101070: Particle View 01 1
+    101072: Particle View 01 10
+    101074: Particle View 01 11
+    101076: Particle View 01 12
+    101078: Particle View 01 13
+    101080: Particle View 01 14
+    101082: Particle View 01 15
+    101084: Particle View 01 16
+    101086: Particle View 01 17
+    101088: Particle View 01 18
+    101090: Particle View 01 19
+    101092: Particle View 01 2
+    101094: Particle View 01 20
+    101096: Particle View 01 21
+    101098: Particle View 01 22
+    101100: Particle View 01 23
+    101102: Particle View 01 24
+    101104: Particle View 01 25
+    101106: Particle View 01 26
+    101108: Particle View 01 27
+    101110: Particle View 01 28
+    101112: Particle View 01 29
+    101114: Particle View 01 3
+    101116: Particle View 01 30
+    101118: Particle View 01 31
+    101120: Particle View 01 32
+    101122: Particle View 01 33
+    101124: Particle View 01 34
+    101126: Particle View 01 35
+    101128: Particle View 01 36
+    101130: Particle View 01 37
+    101132: Particle View 01 38
+    101134: Particle View 01 39
+    101136: Particle View 01 4
+    101138: Particle View 01 40
+    101140: Particle View 01 41
+    101142: Particle View 01 42
+    101144: Particle View 01 43
+    101146: Particle View 01 44
+    101148: Particle View 01 45
+    101150: Particle View 01 46
+    101152: Particle View 01 47
+    101154: Particle View 01 48
+    101156: Particle View 01 49
+    101158: Particle View 01 5
+    101160: Particle View 01 50
+    101162: Particle View 01 51
+    101164: Particle View 01 52
+    101166: Particle View 01 53
+    101168: Particle View 01 54
+    101170: Particle View 01 55
+    101172: Particle View 01 56
+    101174: Particle View 01 57
+    101176: Particle View 01 58
+    101178: Particle View 01 59
+    101180: Particle View 01 6
+    101182: Particle View 01 60
+    101184: Particle View 01 61
+    101186: Particle View 01 62
+    101188: Particle View 01 63
+    101190: Particle View 01 64
+    101192: Particle View 01 65
+    101194: Particle View 01 66
+    101196: Particle View 01 67
+    101198: Particle View 01 68
+    101200: Particle View 01 69
+    101202: Particle View 01 7
+    101204: Particle View 01 70
+    101206: Particle View 01 71
+    101208: Particle View 01 72
+    101210: Particle View 01 73
+    101212: Particle View 01 74
+    101214: Particle View 01 75
+    101216: Particle View 01 76
+    101218: Particle View 01 77
+    101220: Particle View 01 78
+    101222: Particle View 01 79
+    101224: Particle View 01 8
+    101226: Particle View 01 9
+    101228: Particle View01
+    101230: Particle View01 1
+    400000: Object009
+    400002: //RootNode
+    400004: SYJ_jianzhu01
+    400006: SYJ_jianzhu02
+    400008: SYJ_jianzhu03
+    400010: SYJ_jianzhu04
+    400012: SYJ_jianzhu05
+    400014: SYJ_jianzhu06
+    400016: SYJ_jianzhu07
+    400018: SYJ_jianzhu08
+    400020: SYJ_jianzhu09
+    400022: SYJ_jianzhu10
+    400024: SYJ_jianzhu11
+    400026: SYJ_renxingdao01
+    400028: SYJ_renxingdao02
+    400030: SYJ_yuanjing01
+    400032: Box002
+    400034: Group001
+    400036: Group002
+    400038: Group003
+    400040: Group004
+    400042: Group005
+    400044: Group006
+    400046: Group007
+    400048: Group008
+    400050: Group009
+    400052: Group010
+    400054: Group011
+    400056: Object001
+    400058: Object005
+    400060: Object006
+    400062: Object008
+    400064: Object010
+    400066: Object011
+    400068: Object015
+    400070: Object016
+    400072: Object018
+    400074: Object025
+    400076: Object026
+    400078: Object027
+    400080: Rectangle001
+    400082: Rectangle002
+    400084: Rectangle003
+    400086: Rectangle004
+    400088: Rectangle005
+    400090: Rectangle006
+    400092: s4studio_mesh_0
+    400094: s4studio_mesh_0 1
+    400096: s4studio_mesh_0 2
+    400098: s4studio_mesh_0 3
+    400100: s4studio_mesh_0 4
+    400102: s4studio_mesh_0 5
+    400104: s4studio_mesh_0 6
+    400106: s4studio_mesh_0 7
+    400108: s4studio_mesh_003
+    400110: s4studio_mesh_004
+    400112: s4studio_mesh_005
+    400114: s4studio_mesh_006
+    400116: s4studio_mesh_007
+    400118: s4studio_mesh_008
+    400120: s4studio_mesh_009
+    400122: s4studio_mesh_010
+    400124: s4studio_mesh_011
+    400126: s4studio_mesh_012
+    400128: s4studio_mesh_013
+    400130: s4studio_mesh_014
+    400132: s4studio_mesh_015
+    400134: s4studio_mesh_016
+    400136: s4studio_mesh_017
+    400138: s4studio_mesh_018
+    400140: s4studio_mesh_019
+    400142: s4studio_mesh_020
+    400144: s4studio_mesh_021
+    400146: s4studio_mesh_022
+    400148: s4studio_mesh_023
+    400150: s4studio_mesh_024
+    400152: s4studio_mesh_025
+    400154: s4studio_mesh_026
+    400156: s4studio_mesh_027
+    400158: s4studio_mesh_028
+    400160: s4studio_mesh_030
+    400162: s4studio_mesh_031
+    400164: s4studio_mesh_032
+    400166: s4studio_mesh_033
+    400168: s4studio_mesh_034
+    400170: s4studio_mesh_035
+    400172: s4studio_mesh_036
+    400174: s4studio_mesh_037
+    400176: s4studio_mesh_038
+    400178: s4studio_mesh_039
+    400180: s4studio_mesh_040
+    400182: s4studio_mesh_041
+    400184: s4studio_mesh_042
+    400186: s4studio_mesh_043
+    400188: s4studio_mesh_044
+    400190: s4studio_mesh_045
+    400192: s4studio_mesh_051
+    400194: s4studio_mesh_052
+    400196: s4studio_mesh_053
+    400198: s4studio_mesh_054
+    400200: s4studio_mesh_055
+    400202: s4studio_mesh_056
+    400204: s4studio_mesh_057
+    400206: s4studio_mesh_058
+    400208: s4studio_mesh_059
+    400210: s4studio_mesh_060
+    400212: s4studio_mesh_061
+    400214: s4studio_mesh_062
+    400216: s4studio_mesh_063
+    400218: s4studio_mesh_064
+    400220: s4studio_mesh_065
+    400222: s4studio_mesh_1
+    400224: s4studio_mesh_1 1
+    400226: s4studio_mesh_1 2
+    400228: s4studio_mesh_1 3
+    400230: s4studio_mesh_1 4
+    400232: s4studio_mesh_1 5
+    400234: s4studio_mesh_1 6
+    400236: s4studio_mesh_1 7
+    400238: s4studio_mesh_1 8
+    400240: s4studio_mesh_2
+    400242: s4studio_mesh_2 1
+    400244: s4studio_mesh_2 2
+    400246: s4studio_mesh_2 3
+    400248: s4studio_mesh_2 4
+    400250: Object028
+    400252: Object031
+    400254: s4studio_mesh_066
+    400256: s4studio_mesh_067
+    400258: s4studio_mesh_068
+    400260: s4studio_mesh_069
+    400262: Group023
+    400264: Group024
+    400266: Group025
+    400268: Group026
+    400270: Group027
+    400272: Group028
+    400274: Group029
+    400276: Group030
+    400278: Group031
+    400280: Group032
+    400282: Group033
+    400284: Object053
+    400286: Object054
+    400288: Object055
+    400290: Object056
+    400292: Object057
+    400294: Object058
+    400296: Object059
+    400298: Object060
+    400300: Object061
+    400302: Object062
+    400304: Object063
+    400306: Object064
+    400308: Object065
+    400310: Object066
+    400312: Object067
+    400314: Rectangle013
+    400316: Rectangle014
+    400318: Rectangle015
+    400320: Rectangle016
+    400322: Rectangle017
+    400324: Rectangle018
+    400326: s4studio_mesh_157
+    400328: s4studio_mesh_158
+    400330: s4studio_mesh_159
+    400332: s4studio_mesh_160
+    400334: s4studio_mesh_161
+    400336: s4studio_mesh_162
+    400338: s4studio_mesh_163
+    400340: s4studio_mesh_164
+    400342: s4studio_mesh_165
+    400344: s4studio_mesh_166
+    400346: s4studio_mesh_167
+    400348: s4studio_mesh_168
+    400350: s4studio_mesh_169
+    400352: s4studio_mesh_170
+    400354: s4studio_mesh_171
+    400356: s4studio_mesh_172
+    400358: s4studio_mesh_173
+    400360: s4studio_mesh_174
+    400362: s4studio_mesh_175
+    400364: s4studio_mesh_176
+    400366: s4studio_mesh_177
+    400368: s4studio_mesh_178
+    400370: s4studio_mesh_179
+    400372: s4studio_mesh_180
+    400374: s4studio_mesh_181
+    400376: s4studio_mesh_182
+    400378: s4studio_mesh_183
+    400380: s4studio_mesh_184
+    400382: s4studio_mesh_185
+    400384: s4studio_mesh_186
+    400386: s4studio_mesh_187
+    400388: s4studio_mesh_188
+    400390: s4studio_mesh_189
+    400392: s4studio_mesh_190
+    400394: s4studio_mesh_191
+    400396: s4studio_mesh_192
+    400398: s4studio_mesh_193
+    400400: s4studio_mesh_194
+    400402: s4studio_mesh_195
+    400404: s4studio_mesh_196
+    400406: s4studio_mesh_197
+    400408: s4studio_mesh_198
+    400410: s4studio_mesh_199
+    400412: s4studio_mesh_200
+    400414: s4studio_mesh_201
+    400416: s4studio_mesh_202
+    400418: s4studio_mesh_203
+    400420: s4studio_mesh_204
+    400422: s4studio_mesh_205
+    400424: s4studio_mesh_206
+    400426: s4studio_mesh_207
+    400428: s4studio_mesh_208
+    400430: s4studio_mesh_209
+    400432: s4studio_mesh_210
+    400434: s4studio_mesh_211
+    400436: s4studio_mesh_212
+    400438: s4studio_mesh_213
+    400440: s4studio_mesh_214
+    400442: s4studio_mesh_215
+    400444: s4studio_mesh_216
+    400446: s4studio_mesh_217
+    400448: s4studio_mesh_218
+    400450: s4studio_mesh_219
+    400452: s4studio_mesh_220
+    400454: s4studio_mesh_221
+    400456: s4studio_mesh_222
+    400458: s4studio_mesh_223
+    400460: s4studio_mesh_224
+    400462: s4studio_mesh_225
+    400464: Group035
+    400466: Group036
+    400468: Group037
+    400470: Group038
+    400472: Group039
+    400474: Group040
+    400476: Group041
+    400478: Group042
+    400480: Group043
+    400482: Group044
+    400484: Group045
+    400486: Object068
+    400488: Object069
+    400490: Object070
+    400492: Object071
+    400494: Object072
+    400496: Object073
+    400498: Object074
+    400500: Object075
+    400502: Object076
+    400504: Object077
+    400506: Object078
+    400508: Object079
+    400510: Object080
+    400512: Object081
+    400514: Object082
+    400516: Rectangle019
+    400518: Rectangle020
+    400520: Rectangle021
+    400522: Rectangle022
+    400524: Rectangle023
+    400526: Rectangle024
+    400528: s4studio_mesh_226
+    400530: s4studio_mesh_227
+    400532: s4studio_mesh_228
+    400534: s4studio_mesh_229
+    400536: s4studio_mesh_230
+    400538: s4studio_mesh_231
+    400540: s4studio_mesh_232
+    400542: s4studio_mesh_233
+    400544: s4studio_mesh_234
+    400546: s4studio_mesh_235
+    400548: s4studio_mesh_236
+    400550: s4studio_mesh_237
+    400552: s4studio_mesh_238
+    400554: s4studio_mesh_239
+    400556: s4studio_mesh_240
+    400558: s4studio_mesh_241
+    400560: s4studio_mesh_242
+    400562: s4studio_mesh_243
+    400564: s4studio_mesh_244
+    400566: s4studio_mesh_245
+    400568: s4studio_mesh_246
+    400570: s4studio_mesh_247
+    400572: s4studio_mesh_248
+    400574: s4studio_mesh_249
+    400576: s4studio_mesh_250
+    400578: s4studio_mesh_251
+    400580: s4studio_mesh_252
+    400582: s4studio_mesh_253
+    400584: s4studio_mesh_254
+    400586: s4studio_mesh_255
+    400588: s4studio_mesh_256
+    400590: s4studio_mesh_257
+    400592: s4studio_mesh_258
+    400594: s4studio_mesh_259
+    400596: s4studio_mesh_260
+    400598: s4studio_mesh_261
+    400600: s4studio_mesh_262
+    400602: s4studio_mesh_263
+    400604: s4studio_mesh_264
+    400606: s4studio_mesh_265
+    400608: s4studio_mesh_266
+    400610: s4studio_mesh_267
+    400612: s4studio_mesh_268
+    400614: s4studio_mesh_269
+    400616: s4studio_mesh_270
+    400618: s4studio_mesh_271
+    400620: s4studio_mesh_272
+    400622: s4studio_mesh_273
+    400624: s4studio_mesh_274
+    400626: s4studio_mesh_275
+    400628: s4studio_mesh_276
+    400630: s4studio_mesh_277
+    400632: s4studio_mesh_278
+    400634: s4studio_mesh_279
+    400636: s4studio_mesh_280
+    400638: s4studio_mesh_281
+    400640: s4studio_mesh_282
+    400642: s4studio_mesh_283
+    400644: s4studio_mesh_284
+    400646: s4studio_mesh_285
+    400648: s4studio_mesh_286
+    400650: s4studio_mesh_287
+    400652: s4studio_mesh_288
+    400654: s4studio_mesh_289
+    400656: s4studio_mesh_290
+    400658: s4studio_mesh_291
+    400660: s4studio_mesh_292
+    400662: s4studio_mesh_293
+    400664: s4studio_mesh_294
+    400666: Object089
+    400668: SYJ_jiajudian01
+    400670: SYJ_jiajudian01 1
+    400672: baobian
+    400674: Circle001
+    400676: Circle002
+    400678: Circle004
+    400680: Object007
+    400682: sjy_zxdibiao02
+    400684: sjy_zxdibiao03
+    400686: syj_caodi01
+    400688: ' 1'
+    400690: sjy_zxdibiao06
+    400692: sjy_zxdibiao07
+    400694: sjy_zxdibiao08
+    400696: Object021
+    400698: Object022
+    400700: sjy_zxdibiao004
+    400702: batai
+    400704: bataiyi
+    400706: boli
+    400708: boli 1
+    400710: boli 2
+    400712: dimian
+    400714: dimian 1
+    400716: dimian 2
+    400718: erlou
+    400720: erlou 1
+    400722: erlou 2
+    400724: jiugui
+    400726: meng
+    400728: meng 1
+    400730: meng 2
+    400732: Object013
+    400734: Object014
+    400736: qiantai
+    400738: shafa
+    400740: xiegui_1
+    400742: xiegui_2
+    400744: yifu_1
+    400746: yifu_2
+    400748: yifu_3
+    400750: yifu_4
+    400752: yijia_1
+    400754: yijia_2
+    400756: yijia_3
+    400758: yilou
+    400760: yilou 1
+    400762: yilou 2
+    400764: yuanzhuo
+    400766: yuanzhuoyi
+    400768: zhantai
+    400770: zhuozi
+    400772: syj_zxlangan01
+    400774: arch20_027_07
+    400776: arch20_027_07 1
+    400778: arch24_027_01
+    400780: arch24_028_01
+    400782: arch24_036_00
+    400784: arch24_037_00
+    400786: arch24_042_00
+    400788: arch24_043_00
+    400790: arch24_044_00
+    400792: arch24_044_00 1
+    400794: arch24_045_00
+    400796: arch24_045_00 1
+    400798: arch24_045_00 2
+    400800: arch24_045_00 3
+    400802: arch24_045_02
+    400804: arch24_045_02 1
+    400806: arch24_045_02 2
+    400808: arch24_045_02 3
+    400810: arch24_045_04
+    400812: arch24_045_04 1
+    400814: arch24_045_04 2
+    400816: arch24_045_04 3
+    400818: arch24_051_01
+    400820: arch24_051_01 1
+    400822: arch24_052_00
+    400824: arch24_052_00 1
+    400826: arch24_052_01
+    400828: arch24_052_01 1
+    400830: arch24_052_02
+    400832: arch24_052_02 1
+    400834: arch24_057_00
+    400836: arch24_057_00 1
+    400838: arch24_057_00 2
+    400840: arch24_057_00 3
+    400842: arch24_058_00
+    400844: arch24_058_00 1
+    400846: arch24_059_00
+    400848: arch24_062_00
+    400850: arch24_062_00 1
+    400852: arch24_062_00 10
+    400854: arch24_062_00 11
+    400856: arch24_062_00 12
+    400858: arch24_062_00 13
+    400860: arch24_062_00 14
+    400862: arch24_062_00 15
+    400864: arch24_062_00 2
+    400866: arch24_062_00 3
+    400868: arch24_062_00 4
+    400870: arch24_062_00 5
+    400872: arch24_062_00 6
+    400874: arch24_062_00 7
+    400876: arch24_062_00 8
+    400878: arch24_062_00 9
+    400880: arch24_062_01
+    400882: arch24_062_01 1
+    400884: arch24_062_01 10
+    400886: arch24_062_01 11
+    400888: arch24_062_01 12
+    400890: arch24_062_01 13
+    400892: arch24_062_01 14
+    400894: arch24_062_01 15
+    400896: arch24_062_01 2
+    400898: arch24_062_01 3
+    400900: arch24_062_01 4
+    400902: arch24_062_01 5
+    400904: arch24_062_01 6
+    400906: arch24_062_01 7
+    400908: arch24_062_01 8
+    400910: arch24_062_01 9
+    400912: arch24_063_05
+    400914: arch24_063_05 1
+    400916: arch24_063_05 10
+    400918: arch24_063_05 11
+    400920: arch24_063_05 12
+    400922: arch24_063_05 13
+    400924: arch24_063_05 14
+    400926: arch24_063_05 15
+    400928: arch24_063_05 2
+    400930: arch24_063_05 3
+    400932: arch24_063_05 4
+    400934: arch24_063_05 5
+    400936: arch24_063_05 6
+    400938: arch24_063_05 7
+    400940: arch24_063_05 8
+    400942: arch24_063_05 9
+    400944: Arch46_057_1
+    400946: Arch46_057_1 1
+    400948: Arch46_057_1 2
+    400950: Arch46_057_1 3
+    400952: ArchInteriors_12_01_obj_337
+    400954: ArchInteriors_12_01_obj_338
+    400956: ArchInteriors_12_07_obj_21
+    400958: ArchInteriors_12_07_obj_22
+    400960: ArchInteriors_12_07_obj_23
+    400962: ArchInteriors_12_07_obj_24
+    400964: ArchInteriors_12_07_obj_242
+    400966: ArchInteriors_12_07_obj_243
+    400968: ArchInteriors_12_07_obj_244
+    400970: ArchInteriors_12_07_obj_245
+    400972: ArchInteriors_12_07_obj_246
+    400974: ArchInteriors_12_07_obj_247
+    400976: ArchInteriors_12_07_obj_248
+    400978: ArchInteriors_12_07_obj_249
+    400980: ArchInteriors_12_07_obj_25
+    400982: ArchInteriors_12_07_obj_250
+    400984: ArchInteriors_12_07_obj_251
+    400986: ArchInteriors_12_07_obj_252
+    400988: ArchInteriors_12_07_obj_253
+    400990: ArchInteriors_12_07_obj_255
+    400992: ArchInteriors_12_07_obj_256
+    400994: ArchInteriors_12_07_obj_26
+    400996: ArchInteriors_12_07_obj_27
+    400998: ArchInteriors_12_07_obj_28
+    401000: ArchInteriors_12_07_obj_29
+    401002: ArchInteriors_12_07_obj_30
+    401004: ArchInteriors_12_07_obj_31
+    401006: ArchInteriors_12_07_obj_32
+    401008: ArchInteriors_12_07_obj_33
+    401010: ArchInteriors_12_07_obj_34
+    401012: fridge_008_54
+    401014: Particle View 002
+    401016: Particle View 002 1
+    401018: Particle View 002 10
+    401020: Particle View 002 11
+    401022: Particle View 002 12
+    401024: Particle View 002 13
+    401026: Particle View 002 14
+    401028: Particle View 002 15
+    401030: Particle View 002 16
+    401032: Particle View 002 17
+    401034: Particle View 002 18
+    401036: Particle View 002 19
+    401038: Particle View 002 2
+    401040: Particle View 002 20
+    401042: Particle View 002 21
+    401044: Particle View 002 22
+    401046: Particle View 002 23
+    401048: Particle View 002 24
+    401050: Particle View 002 25
+    401052: Particle View 002 26
+    401054: Particle View 002 3
+    401056: Particle View 002 4
+    401058: Particle View 002 5
+    401060: Particle View 002 6
+    401062: Particle View 002 7
+    401064: Particle View 002 8
+    401066: Particle View 002 9
+    401068: Particle View 01
+    401070: Particle View 01 1
+    401072: Particle View 01 10
+    401074: Particle View 01 11
+    401076: Particle View 01 12
+    401078: Particle View 01 13
+    401080: Particle View 01 14
+    401082: Particle View 01 15
+    401084: Particle View 01 16
+    401086: Particle View 01 17
+    401088: Particle View 01 18
+    401090: Particle View 01 19
+    401092: Particle View 01 2
+    401094: Particle View 01 20
+    401096: Particle View 01 21
+    401098: Particle View 01 22
+    401100: Particle View 01 23
+    401102: Particle View 01 24
+    401104: Particle View 01 25
+    401106: Particle View 01 26
+    401108: Particle View 01 27
+    401110: Particle View 01 28
+    401112: Particle View 01 29
+    401114: Particle View 01 3
+    401116: Particle View 01 30
+    401118: Particle View 01 31
+    401120: Particle View 01 32
+    401122: Particle View 01 33
+    401124: Particle View 01 34
+    401126: Particle View 01 35
+    401128: Particle View 01 36
+    401130: Particle View 01 37
+    401132: Particle View 01 38
+    401134: Particle View 01 39
+    401136: Particle View 01 4
+    401138: Particle View 01 40
+    401140: Particle View 01 41
+    401142: Particle View 01 42
+    401144: Particle View 01 43
+    401146: Particle View 01 44
+    401148: Particle View 01 45
+    401150: Particle View 01 46
+    401152: Particle View 01 47
+    401154: Particle View 01 48
+    401156: Particle View 01 49
+    401158: Particle View 01 5
+    401160: Particle View 01 50
+    401162: Particle View 01 51
+    401164: Particle View 01 52
+    401166: Particle View 01 53
+    401168: Particle View 01 54
+    401170: Particle View 01 55
+    401172: Particle View 01 56
+    401174: Particle View 01 57
+    401176: Particle View 01 58
+    401178: Particle View 01 59
+    401180: Particle View 01 6
+    401182: Particle View 01 60
+    401184: Particle View 01 61
+    401186: Particle View 01 62
+    401188: Particle View 01 63
+    401190: Particle View 01 64
+    401192: Particle View 01 65
+    401194: Particle View 01 66
+    401196: Particle View 01 67
+    401198: Particle View 01 68
+    401200: Particle View 01 69
+    401202: Particle View 01 7
+    401204: Particle View 01 70
+    401206: Particle View 01 71
+    401208: Particle View 01 72
+    401210: Particle View 01 73
+    401212: Particle View 01 74
+    401214: Particle View 01 75
+    401216: Particle View 01 76
+    401218: Particle View 01 77
+    401220: Particle View 01 78
+    401222: Particle View 01 79
+    401224: Particle View 01 8
+    401226: Particle View 01 9
+    401228: Particle View01
+    401230: Particle View01 1
+    2100000: SYJ_renxingdao02
+    2100002: SYJ_jianzhu02
+    2100004: SYJ_jianzhu03
+    2100006: SYJ_jianzhu07
+    2100008: SYJ_jianzhu01
+    2100010: SYJ_jianzhu05
+    2100012: SYJ_jianzhu04
+    2100014: SYJ_jianzhu06
+    2100016: SYJ_renxingdao01
+    2100018: SYJ_jianzhu11
+    2100020: SYJ_jianzhu08
+    2100022: SYJ_jianzhu09
+    2100024: SYJ_jianzhu10
+    2100026: SYJ_yuanjing01
+    2300000: SYJ_jianzhu01
+    2300002: SYJ_jianzhu02
+    2300004: SYJ_jianzhu03
+    2300006: SYJ_jianzhu04
+    2300008: SYJ_jianzhu05
+    2300010: SYJ_jianzhu06
+    2300012: SYJ_jianzhu07
+    2300014: SYJ_jianzhu08
+    2300016: SYJ_jianzhu09
+    2300018: SYJ_jianzhu10
+    2300020: SYJ_jianzhu11
+    2300022: SYJ_renxingdao01
+    2300024: SYJ_renxingdao02
+    2300026: SYJ_yuanjing01
+    2300028: Box002
+    2300030: Object001
+    2300032: Object008
+    2300034: Object009
+    2300036: Object010
+    2300038: Object011
+    2300040: Object015
+    2300042: Object016
+    2300044: Object018
+    2300046: Object025
+    2300048: Object026
+    2300050: Object027
+    2300052: Rectangle001
+    2300054: Rectangle002
+    2300056: Rectangle003
+    2300058: Rectangle004
+    2300060: Rectangle005
+    2300062: Rectangle006
+    2300064: s4studio_mesh_0
+    2300066: s4studio_mesh_0 1
+    2300068: s4studio_mesh_0 2
+    2300070: s4studio_mesh_0 3
+    2300072: s4studio_mesh_0 4
+    2300074: s4studio_mesh_0 5
+    2300076: s4studio_mesh_0 6
+    2300078: s4studio_mesh_0 7
+    2300080: s4studio_mesh_003
+    2300082: s4studio_mesh_004
+    2300084: s4studio_mesh_005
+    2300086: s4studio_mesh_006
+    2300088: s4studio_mesh_007
+    2300090: s4studio_mesh_008
+    2300092: s4studio_mesh_009
+    2300094: s4studio_mesh_010
+    2300096: s4studio_mesh_011
+    2300098: s4studio_mesh_012
+    2300100: s4studio_mesh_013
+    2300102: s4studio_mesh_014
+    2300104: s4studio_mesh_015
+    2300106: s4studio_mesh_016
+    2300108: s4studio_mesh_017
+    2300110: s4studio_mesh_018
+    2300112: s4studio_mesh_019
+    2300114: s4studio_mesh_020
+    2300116: s4studio_mesh_021
+    2300118: s4studio_mesh_022
+    2300120: s4studio_mesh_023
+    2300122: s4studio_mesh_024
+    2300124: s4studio_mesh_025
+    2300126: s4studio_mesh_026
+    2300128: s4studio_mesh_027
+    2300130: s4studio_mesh_028
+    2300132: s4studio_mesh_030
+    2300134: s4studio_mesh_031
+    2300136: s4studio_mesh_032
+    2300138: s4studio_mesh_033
+    2300140: s4studio_mesh_034
+    2300142: s4studio_mesh_035
+    2300144: s4studio_mesh_036
+    2300146: s4studio_mesh_037
+    2300148: s4studio_mesh_038
+    2300150: s4studio_mesh_039
+    2300152: s4studio_mesh_040
+    2300154: s4studio_mesh_041
+    2300156: s4studio_mesh_042
+    2300158: s4studio_mesh_043
+    2300160: s4studio_mesh_044
+    2300162: s4studio_mesh_045
+    2300164: s4studio_mesh_051
+    2300166: s4studio_mesh_052
+    2300168: s4studio_mesh_053
+    2300170: s4studio_mesh_054
+    2300172: s4studio_mesh_055
+    2300174: s4studio_mesh_056
+    2300176: s4studio_mesh_057
+    2300178: s4studio_mesh_058
+    2300180: s4studio_mesh_059
+    2300182: s4studio_mesh_060
+    2300184: s4studio_mesh_061
+    2300186: s4studio_mesh_062
+    2300188: s4studio_mesh_063
+    2300190: s4studio_mesh_064
+    2300192: s4studio_mesh_065
+    2300194: s4studio_mesh_1
+    2300196: s4studio_mesh_1 1
+    2300198: s4studio_mesh_1 2
+    2300200: s4studio_mesh_1 3
+    2300202: s4studio_mesh_1 4
+    2300204: s4studio_mesh_1 5
+    2300206: s4studio_mesh_1 6
+    2300208: s4studio_mesh_1 7
+    2300210: s4studio_mesh_1 8
+    2300212: s4studio_mesh_2
+    2300214: s4studio_mesh_2 1
+    2300216: s4studio_mesh_2 2
+    2300218: s4studio_mesh_2 3
+    2300220: s4studio_mesh_2 4
+    2300222: Object028
+    2300224: Object031
+    2300226: s4studio_mesh_066
+    2300228: s4studio_mesh_067
+    2300230: s4studio_mesh_068
+    2300232: s4studio_mesh_069
+    2300234: Object053
+    2300236: Object054
+    2300238: Object055
+    2300240: Object056
+    2300242: Object057
+    2300244: Object058
+    2300246: Object059
+    2300248: Object060
+    2300250: Object061
+    2300252: Object062
+    2300254: Object063
+    2300256: Object064
+    2300258: Object065
+    2300260: Object066
+    2300262: Object067
+    2300264: Rectangle013
+    2300266: Rectangle014
+    2300268: Rectangle015
+    2300270: Rectangle016
+    2300272: Rectangle017
+    2300274: Rectangle018
+    2300276: s4studio_mesh_157
+    2300278: s4studio_mesh_158
+    2300280: s4studio_mesh_159
+    2300282: s4studio_mesh_160
+    2300284: s4studio_mesh_161
+    2300286: s4studio_mesh_162
+    2300288: s4studio_mesh_163
+    2300290: s4studio_mesh_164
+    2300292: s4studio_mesh_165
+    2300294: s4studio_mesh_166
+    2300296: s4studio_mesh_167
+    2300298: s4studio_mesh_168
+    2300300: s4studio_mesh_169
+    2300302: s4studio_mesh_170
+    2300304: s4studio_mesh_171
+    2300306: s4studio_mesh_172
+    2300308: s4studio_mesh_173
+    2300310: s4studio_mesh_174
+    2300312: s4studio_mesh_175
+    2300314: s4studio_mesh_176
+    2300316: s4studio_mesh_177
+    2300318: s4studio_mesh_178
+    2300320: s4studio_mesh_179
+    2300322: s4studio_mesh_180
+    2300324: s4studio_mesh_181
+    2300326: s4studio_mesh_182
+    2300328: s4studio_mesh_183
+    2300330: s4studio_mesh_184
+    2300332: s4studio_mesh_185
+    2300334: s4studio_mesh_186
+    2300336: s4studio_mesh_187
+    2300338: s4studio_mesh_188
+    2300340: s4studio_mesh_189
+    2300342: s4studio_mesh_190
+    2300344: s4studio_mesh_191
+    2300346: s4studio_mesh_192
+    2300348: s4studio_mesh_193
+    2300350: s4studio_mesh_194
+    2300352: s4studio_mesh_195
+    2300354: s4studio_mesh_196
+    2300356: s4studio_mesh_197
+    2300358: s4studio_mesh_198
+    2300360: s4studio_mesh_199
+    2300362: s4studio_mesh_200
+    2300364: s4studio_mesh_201
+    2300366: s4studio_mesh_202
+    2300368: s4studio_mesh_203
+    2300370: s4studio_mesh_204
+    2300372: s4studio_mesh_205
+    2300374: s4studio_mesh_206
+    2300376: s4studio_mesh_207
+    2300378: s4studio_mesh_208
+    2300380: s4studio_mesh_209
+    2300382: s4studio_mesh_210
+    2300384: s4studio_mesh_211
+    2300386: s4studio_mesh_212
+    2300388: s4studio_mesh_213
+    2300390: s4studio_mesh_214
+    2300392: s4studio_mesh_215
+    2300394: s4studio_mesh_216
+    2300396: s4studio_mesh_217
+    2300398: s4studio_mesh_218
+    2300400: s4studio_mesh_219
+    2300402: s4studio_mesh_220
+    2300404: s4studio_mesh_221
+    2300406: s4studio_mesh_222
+    2300408: s4studio_mesh_223
+    2300410: s4studio_mesh_224
+    2300412: s4studio_mesh_225
+    2300414: Object068
+    2300416: Object069
+    2300418: Object070
+    2300420: Object071
+    2300422: Object072
+    2300424: Object073
+    2300426: Object074
+    2300428: Object075
+    2300430: Object076
+    2300432: Object077
+    2300434: Object078
+    2300436: Object079
+    2300438: Object080
+    2300440: Object081
+    2300442: Object082
+    2300444: Rectangle019
+    2300446: Rectangle020
+    2300448: Rectangle021
+    2300450: Rectangle022
+    2300452: Rectangle023
+    2300454: Rectangle024
+    2300456: s4studio_mesh_226
+    2300458: s4studio_mesh_227
+    2300460: s4studio_mesh_228
+    2300462: s4studio_mesh_229
+    2300464: s4studio_mesh_230
+    2300466: s4studio_mesh_231
+    2300468: s4studio_mesh_232
+    2300470: s4studio_mesh_233
+    2300472: s4studio_mesh_234
+    2300474: s4studio_mesh_235
+    2300476: s4studio_mesh_236
+    2300478: s4studio_mesh_237
+    2300480: s4studio_mesh_238
+    2300482: s4studio_mesh_239
+    2300484: s4studio_mesh_240
+    2300486: s4studio_mesh_241
+    2300488: s4studio_mesh_242
+    2300490: s4studio_mesh_243
+    2300492: s4studio_mesh_244
+    2300494: s4studio_mesh_245
+    2300496: s4studio_mesh_246
+    2300498: s4studio_mesh_247
+    2300500: s4studio_mesh_248
+    2300502: s4studio_mesh_249
+    2300504: s4studio_mesh_250
+    2300506: s4studio_mesh_251
+    2300508: s4studio_mesh_252
+    2300510: s4studio_mesh_253
+    2300512: s4studio_mesh_254
+    2300514: s4studio_mesh_255
+    2300516: s4studio_mesh_256
+    2300518: s4studio_mesh_257
+    2300520: s4studio_mesh_258
+    2300522: s4studio_mesh_259
+    2300524: s4studio_mesh_260
+    2300526: s4studio_mesh_261
+    2300528: s4studio_mesh_262
+    2300530: s4studio_mesh_263
+    2300532: s4studio_mesh_264
+    2300534: s4studio_mesh_265
+    2300536: s4studio_mesh_266
+    2300538: s4studio_mesh_267
+    2300540: s4studio_mesh_268
+    2300542: s4studio_mesh_269
+    2300544: s4studio_mesh_270
+    2300546: s4studio_mesh_271
+    2300548: s4studio_mesh_272
+    2300550: s4studio_mesh_273
+    2300552: s4studio_mesh_274
+    2300554: s4studio_mesh_275
+    2300556: s4studio_mesh_276
+    2300558: s4studio_mesh_277
+    2300560: s4studio_mesh_278
+    2300562: s4studio_mesh_279
+    2300564: s4studio_mesh_280
+    2300566: s4studio_mesh_281
+    2300568: s4studio_mesh_282
+    2300570: s4studio_mesh_283
+    2300572: s4studio_mesh_284
+    2300574: s4studio_mesh_285
+    2300576: s4studio_mesh_286
+    2300578: s4studio_mesh_287
+    2300580: s4studio_mesh_288
+    2300582: s4studio_mesh_289
+    2300584: s4studio_mesh_290
+    2300586: s4studio_mesh_291
+    2300588: s4studio_mesh_292
+    2300590: s4studio_mesh_293
+    2300592: s4studio_mesh_294
+    2300594: Object089
+    2300596: SYJ_jiajudian01
+    2300598: SYJ_jiajudian01 1
+    2300600: baobian
+    2300602: Circle001
+    2300604: Circle002
+    2300606: Circle004
+    2300608: Object007
+    2300610: sjy_zxdibiao02
+    2300612: sjy_zxdibiao03
+    2300614: syj_caodi01
+    2300616: ' 1'
+    2300618: sjy_zxdibiao06
+    2300620: sjy_zxdibiao07
+    2300622: sjy_zxdibiao08
+    2300624: Object021
+    2300626: Object022
+    2300628: sjy_zxdibiao004
+    2300630: batai
+    2300632: bataiyi
+    2300634: boli
+    2300636: boli 1
+    2300638: boli 2
+    2300640: dimian
+    2300642: dimian 1
+    2300644: dimian 2
+    2300646: erlou
+    2300648: erlou 1
+    2300650: erlou 2
+    2300652: jiugui
+    2300654: meng
+    2300656: meng 1
+    2300658: meng 2
+    2300660: Object013
+    2300662: Object014
+    2300664: qiantai
+    2300666: shafa
+    2300668: xiegui_1
+    2300670: xiegui_2
+    2300672: yifu_1
+    2300674: yifu_2
+    2300676: yifu_3
+    2300678: yifu_4
+    2300680: yijia_1
+    2300682: yijia_2
+    2300684: yijia_3
+    2300686: yilou
+    2300688: yilou 1
+    2300690: yilou 2
+    2300692: yuanzhuo
+    2300694: yuanzhuoyi
+    2300696: zhantai
+    2300698: zhuozi
+    2300700: syj_zxlangan01
+    3300000: SYJ_jianzhu01
+    3300002: SYJ_jianzhu02
+    3300004: SYJ_jianzhu03
+    3300006: SYJ_jianzhu04
+    3300008: SYJ_jianzhu05
+    3300010: SYJ_jianzhu06
+    3300012: SYJ_jianzhu07
+    3300014: SYJ_jianzhu08
+    3300016: SYJ_jianzhu09
+    3300018: SYJ_jianzhu10
+    3300020: SYJ_jianzhu11
+    3300022: SYJ_renxingdao01
+    3300024: SYJ_renxingdao02
+    3300026: SYJ_yuanjing01
+    3300028: Box002
+    3300030: Object001
+    3300032: Object008
+    3300034: Object009
+    3300036: Object010
+    3300038: Object011
+    3300040: Object015
+    3300042: Object016
+    3300044: Object018
+    3300046: Object025
+    3300048: Object026
+    3300050: Object027
+    3300052: Rectangle001
+    3300054: Rectangle002
+    3300056: Rectangle003
+    3300058: Rectangle004
+    3300060: Rectangle005
+    3300062: Rectangle006
+    3300064: s4studio_mesh_0
+    3300066: s4studio_mesh_0 1
+    3300068: s4studio_mesh_0 2
+    3300070: s4studio_mesh_0 3
+    3300072: s4studio_mesh_0 4
+    3300074: s4studio_mesh_0 5
+    3300076: s4studio_mesh_0 6
+    3300078: s4studio_mesh_0 7
+    3300080: s4studio_mesh_003
+    3300082: s4studio_mesh_004
+    3300084: s4studio_mesh_005
+    3300086: s4studio_mesh_006
+    3300088: s4studio_mesh_007
+    3300090: s4studio_mesh_008
+    3300092: s4studio_mesh_009
+    3300094: s4studio_mesh_010
+    3300096: s4studio_mesh_011
+    3300098: s4studio_mesh_012
+    3300100: s4studio_mesh_013
+    3300102: s4studio_mesh_014
+    3300104: s4studio_mesh_015
+    3300106: s4studio_mesh_016
+    3300108: s4studio_mesh_017
+    3300110: s4studio_mesh_018
+    3300112: s4studio_mesh_019
+    3300114: s4studio_mesh_020
+    3300116: s4studio_mesh_021
+    3300118: s4studio_mesh_022
+    3300120: s4studio_mesh_023
+    3300122: s4studio_mesh_024
+    3300124: s4studio_mesh_025
+    3300126: s4studio_mesh_026
+    3300128: s4studio_mesh_027
+    3300130: s4studio_mesh_028
+    3300132: s4studio_mesh_030
+    3300134: s4studio_mesh_031
+    3300136: s4studio_mesh_032
+    3300138: s4studio_mesh_033
+    3300140: s4studio_mesh_034
+    3300142: s4studio_mesh_035
+    3300144: s4studio_mesh_036
+    3300146: s4studio_mesh_037
+    3300148: s4studio_mesh_038
+    3300150: s4studio_mesh_039
+    3300152: s4studio_mesh_040
+    3300154: s4studio_mesh_041
+    3300156: s4studio_mesh_042
+    3300158: s4studio_mesh_043
+    3300160: s4studio_mesh_044
+    3300162: s4studio_mesh_045
+    3300164: s4studio_mesh_051
+    3300166: s4studio_mesh_052
+    3300168: s4studio_mesh_053
+    3300170: s4studio_mesh_054
+    3300172: s4studio_mesh_055
+    3300174: s4studio_mesh_056
+    3300176: s4studio_mesh_057
+    3300178: s4studio_mesh_058
+    3300180: s4studio_mesh_059
+    3300182: s4studio_mesh_060
+    3300184: s4studio_mesh_061
+    3300186: s4studio_mesh_062
+    3300188: s4studio_mesh_063
+    3300190: s4studio_mesh_064
+    3300192: s4studio_mesh_065
+    3300194: s4studio_mesh_1
+    3300196: s4studio_mesh_1 1
+    3300198: s4studio_mesh_1 2
+    3300200: s4studio_mesh_1 3
+    3300202: s4studio_mesh_1 4
+    3300204: s4studio_mesh_1 5
+    3300206: s4studio_mesh_1 6
+    3300208: s4studio_mesh_1 7
+    3300210: s4studio_mesh_1 8
+    3300212: s4studio_mesh_2
+    3300214: s4studio_mesh_2 1
+    3300216: s4studio_mesh_2 2
+    3300218: s4studio_mesh_2 3
+    3300220: s4studio_mesh_2 4
+    3300222: Object028
+    3300224: Object031
+    3300226: s4studio_mesh_066
+    3300228: s4studio_mesh_067
+    3300230: s4studio_mesh_068
+    3300232: s4studio_mesh_069
+    3300234: Object053
+    3300236: Object054
+    3300238: Object055
+    3300240: Object056
+    3300242: Object057
+    3300244: Object058
+    3300246: Object059
+    3300248: Object060
+    3300250: Object061
+    3300252: Object062
+    3300254: Object063
+    3300256: Object064
+    3300258: Object065
+    3300260: Object066
+    3300262: Object067
+    3300264: Rectangle013
+    3300266: Rectangle014
+    3300268: Rectangle015
+    3300270: Rectangle016
+    3300272: Rectangle017
+    3300274: Rectangle018
+    3300276: s4studio_mesh_157
+    3300278: s4studio_mesh_158
+    3300280: s4studio_mesh_159
+    3300282: s4studio_mesh_160
+    3300284: s4studio_mesh_161
+    3300286: s4studio_mesh_162
+    3300288: s4studio_mesh_163
+    3300290: s4studio_mesh_164
+    3300292: s4studio_mesh_165
+    3300294: s4studio_mesh_166
+    3300296: s4studio_mesh_167
+    3300298: s4studio_mesh_168
+    3300300: s4studio_mesh_169
+    3300302: s4studio_mesh_170
+    3300304: s4studio_mesh_171
+    3300306: s4studio_mesh_172
+    3300308: s4studio_mesh_173
+    3300310: s4studio_mesh_174
+    3300312: s4studio_mesh_175
+    3300314: s4studio_mesh_176
+    3300316: s4studio_mesh_177
+    3300318: s4studio_mesh_178
+    3300320: s4studio_mesh_179
+    3300322: s4studio_mesh_180
+    3300324: s4studio_mesh_181
+    3300326: s4studio_mesh_182
+    3300328: s4studio_mesh_183
+    3300330: s4studio_mesh_184
+    3300332: s4studio_mesh_185
+    3300334: s4studio_mesh_186
+    3300336: s4studio_mesh_187
+    3300338: s4studio_mesh_188
+    3300340: s4studio_mesh_189
+    3300342: s4studio_mesh_190
+    3300344: s4studio_mesh_191
+    3300346: s4studio_mesh_192
+    3300348: s4studio_mesh_193
+    3300350: s4studio_mesh_194
+    3300352: s4studio_mesh_195
+    3300354: s4studio_mesh_196
+    3300356: s4studio_mesh_197
+    3300358: s4studio_mesh_198
+    3300360: s4studio_mesh_199
+    3300362: s4studio_mesh_200
+    3300364: s4studio_mesh_201
+    3300366: s4studio_mesh_202
+    3300368: s4studio_mesh_203
+    3300370: s4studio_mesh_204
+    3300372: s4studio_mesh_205
+    3300374: s4studio_mesh_206
+    3300376: s4studio_mesh_207
+    3300378: s4studio_mesh_208
+    3300380: s4studio_mesh_209
+    3300382: s4studio_mesh_210
+    3300384: s4studio_mesh_211
+    3300386: s4studio_mesh_212
+    3300388: s4studio_mesh_213
+    3300390: s4studio_mesh_214
+    3300392: s4studio_mesh_215
+    3300394: s4studio_mesh_216
+    3300396: s4studio_mesh_217
+    3300398: s4studio_mesh_218
+    3300400: s4studio_mesh_219
+    3300402: s4studio_mesh_220
+    3300404: s4studio_mesh_221
+    3300406: s4studio_mesh_222
+    3300408: s4studio_mesh_223
+    3300410: s4studio_mesh_224
+    3300412: s4studio_mesh_225
+    3300414: Object068
+    3300416: Object069
+    3300418: Object070
+    3300420: Object071
+    3300422: Object072
+    3300424: Object073
+    3300426: Object074
+    3300428: Object075
+    3300430: Object076
+    3300432: Object077
+    3300434: Object078
+    3300436: Object079
+    3300438: Object080
+    3300440: Object081
+    3300442: Object082
+    3300444: Rectangle019
+    3300446: Rectangle020
+    3300448: Rectangle021
+    3300450: Rectangle022
+    3300452: Rectangle023
+    3300454: Rectangle024
+    3300456: s4studio_mesh_226
+    3300458: s4studio_mesh_227
+    3300460: s4studio_mesh_228
+    3300462: s4studio_mesh_229
+    3300464: s4studio_mesh_230
+    3300466: s4studio_mesh_231
+    3300468: s4studio_mesh_232
+    3300470: s4studio_mesh_233
+    3300472: s4studio_mesh_234
+    3300474: s4studio_mesh_235
+    3300476: s4studio_mesh_236
+    3300478: s4studio_mesh_237
+    3300480: s4studio_mesh_238
+    3300482: s4studio_mesh_239
+    3300484: s4studio_mesh_240
+    3300486: s4studio_mesh_241
+    3300488: s4studio_mesh_242
+    3300490: s4studio_mesh_243
+    3300492: s4studio_mesh_244
+    3300494: s4studio_mesh_245
+    3300496: s4studio_mesh_246
+    3300498: s4studio_mesh_247
+    3300500: s4studio_mesh_248
+    3300502: s4studio_mesh_249
+    3300504: s4studio_mesh_250
+    3300506: s4studio_mesh_251
+    3300508: s4studio_mesh_252
+    3300510: s4studio_mesh_253
+    3300512: s4studio_mesh_254
+    3300514: s4studio_mesh_255
+    3300516: s4studio_mesh_256
+    3300518: s4studio_mesh_257
+    3300520: s4studio_mesh_258
+    3300522: s4studio_mesh_259
+    3300524: s4studio_mesh_260
+    3300526: s4studio_mesh_261
+    3300528: s4studio_mesh_262
+    3300530: s4studio_mesh_263
+    3300532: s4studio_mesh_264
+    3300534: s4studio_mesh_265
+    3300536: s4studio_mesh_266
+    3300538: s4studio_mesh_267
+    3300540: s4studio_mesh_268
+    3300542: s4studio_mesh_269
+    3300544: s4studio_mesh_270
+    3300546: s4studio_mesh_271
+    3300548: s4studio_mesh_272
+    3300550: s4studio_mesh_273
+    3300552: s4studio_mesh_274
+    3300554: s4studio_mesh_275
+    3300556: s4studio_mesh_276
+    3300558: s4studio_mesh_277
+    3300560: s4studio_mesh_278
+    3300562: s4studio_mesh_279
+    3300564: s4studio_mesh_280
+    3300566: s4studio_mesh_281
+    3300568: s4studio_mesh_282
+    3300570: s4studio_mesh_283
+    3300572: s4studio_mesh_284
+    3300574: s4studio_mesh_285
+    3300576: s4studio_mesh_286
+    3300578: s4studio_mesh_287
+    3300580: s4studio_mesh_288
+    3300582: s4studio_mesh_289
+    3300584: s4studio_mesh_290
+    3300586: s4studio_mesh_291
+    3300588: s4studio_mesh_292
+    3300590: s4studio_mesh_293
+    3300592: s4studio_mesh_294
+    3300594: Object089
+    3300596: SYJ_jiajudian01
+    3300598: SYJ_jiajudian01 1
+    3300600: baobian
+    3300602: Circle001
+    3300604: Circle002
+    3300606: Circle004
+    3300608: Object007
+    3300610: sjy_zxdibiao02
+    3300612: sjy_zxdibiao03
+    3300614: syj_caodi01
+    3300616: ' 1'
+    3300618: sjy_zxdibiao06
+    3300620: sjy_zxdibiao07
+    3300622: sjy_zxdibiao08
+    3300624: Object021
+    3300626: Object022
+    3300628: sjy_zxdibiao004
+    3300630: batai
+    3300632: bataiyi
+    3300634: boli
+    3300636: boli 1
+    3300638: boli 2
+    3300640: dimian
+    3300642: dimian 1
+    3300644: dimian 2
+    3300646: erlou
+    3300648: erlou 1
+    3300650: erlou 2
+    3300652: jiugui
+    3300654: meng
+    3300656: meng 1
+    3300658: meng 2
+    3300660: Object013
+    3300662: Object014
+    3300664: qiantai
+    3300666: shafa
+    3300668: xiegui_1
+    3300670: xiegui_2
+    3300672: yifu_1
+    3300674: yifu_2
+    3300676: yifu_3
+    3300678: yifu_4
+    3300680: yijia_1
+    3300682: yijia_2
+    3300684: yijia_3
+    3300686: yilou
+    3300688: yilou 1
+    3300690: yilou 2
+    3300692: yuanzhuo
+    3300694: yuanzhuoyi
+    3300696: zhantai
+    3300698: zhuozi
+    3300700: syj_zxlangan01
+    4300000: SYJ_renxingdao02
+    4300002: SYJ_jianzhu02
+    4300004: SYJ_jianzhu03
+    4300006: SYJ_jianzhu07
+    4300008: SYJ_jianzhu01
+    4300010: SYJ_jianzhu05
+    4300012: SYJ_jianzhu04
+    4300014: SYJ_jianzhu06
+    4300016: SYJ_renxingdao01
+    4300018: SYJ_jianzhu11
+    4300020: SYJ_jianzhu08
+    4300022: SYJ_jianzhu09
+    4300024: SYJ_jianzhu10
+    4300026: SYJ_yuanjing01
+    4300028: Object001
+    4300030: Rectangle001
+    4300032: Rectangle002
+    4300034: Object008
+    4300036: Object009
+    4300038: Object010
+    4300040: Rectangle003
+    4300042: Rectangle004
+    4300044: Rectangle005
+    4300046: Rectangle006
+    4300048: Object011
+    4300050: Box002
+    4300052: Object015
+    4300054: Object016
+    4300056: Object018
+    4300058: Object025
+    4300060: Object026
+    4300062: s4studio_mesh_2
+    4300064: s4studio_mesh_1
+    4300066: s4studio_mesh_1
+    4300068: s4studio_mesh_0
+    4300070: s4studio_mesh_1
+    4300072: s4studio_mesh_0
+    4300074: s4studio_mesh_1
+    4300076: s4studio_mesh_0
+    4300078: s4studio_mesh_0
+    4300080: s4studio_mesh_0
+    4300082: s4studio_mesh_2
+    4300084: s4studio_mesh_003
+    4300086: s4studio_mesh_2
+    4300088: s4studio_mesh_2
+    4300090: s4studio_mesh_2
+    4300092: s4studio_mesh_1
+    4300094: s4studio_mesh_004
+    4300096: s4studio_mesh_005
+    4300098: s4studio_mesh_007
+    4300100: s4studio_mesh_009
+    4300102: s4studio_mesh_006
+    4300104: s4studio_mesh_008
+    4300106: s4studio_mesh_012
+    4300108: s4studio_mesh_013
+    4300110: s4studio_mesh_010
+    4300112: s4studio_mesh_011
+    4300114: s4studio_mesh_016
+    4300116: s4studio_mesh_017
+    4300118: s4studio_mesh_014
+    4300120: s4studio_mesh_015
+    4300122: s4studio_mesh_020
+    4300124: s4studio_mesh_021
+    4300126: s4studio_mesh_018
+    4300128: s4studio_mesh_019
+    4300130: s4studio_mesh_024
+    4300132: s4studio_mesh_025
+    4300134: s4studio_mesh_022
+    4300136: s4studio_mesh_023
+    4300138: s4studio_mesh_026
+    4300140: s4studio_mesh_027
+    4300142: s4studio_mesh_0
+    4300144: s4studio_mesh_028
+    4300146: s4studio_mesh_0
+    4300148: s4studio_mesh_0
+    4300150: Object027
+    4300152: s4studio_mesh_032
+    4300154: s4studio_mesh_033
+    4300156: s4studio_mesh_030
+    4300158: s4studio_mesh_031
+    4300160: s4studio_mesh_036
+    4300162: s4studio_mesh_037
+    4300164: s4studio_mesh_034
+    4300166: s4studio_mesh_035
+    4300168: s4studio_mesh_040
+    4300170: s4studio_mesh_041
+    4300172: s4studio_mesh_044
+    4300174: s4studio_mesh_045
+    4300176: s4studio_mesh_038
+    4300178: s4studio_mesh_039
+    4300180: s4studio_mesh_042
+    4300182: s4studio_mesh_043
+    4300184: s4studio_mesh_1
+    4300186: s4studio_mesh_051
+    4300188: s4studio_mesh_052
+    4300190: s4studio_mesh_053
+    4300192: s4studio_mesh_054
+    4300194: s4studio_mesh_055
+    4300196: s4studio_mesh_056
+    4300198: s4studio_mesh_057
+    4300200: s4studio_mesh_1
+    4300202: s4studio_mesh_058
+    4300204: s4studio_mesh_059
+    4300206: s4studio_mesh_060
+    4300208: s4studio_mesh_061
+    4300210: s4studio_mesh_062
+    4300212: s4studio_mesh_063
+    4300214: s4studio_mesh_064
+    4300216: s4studio_mesh_1
+    4300218: s4studio_mesh_1
+    4300220: s4studio_mesh_065
+    4300222: Object028
+    4300224: Object031
+    4300226: s4studio_mesh_066
+    4300228: s4studio_mesh_067
+    4300230: s4studio_mesh_069
+    4300232: s4studio_mesh_068
+    4300234: s4studio_mesh_215
+    4300236: s4studio_mesh_222
+    4300238: s4studio_mesh_167
+    4300240: s4studio_mesh_169
+    4300242: s4studio_mesh_172
+    4300244: s4studio_mesh_173
+    4300246: s4studio_mesh_176
+    4300248: s4studio_mesh_177
+    4300250: s4studio_mesh_180
+    4300252: s4studio_mesh_181
+    4300254: s4studio_mesh_184
+    4300256: s4studio_mesh_185
+    4300258: s4studio_mesh_191
+    4300260: s4studio_mesh_192
+    4300262: s4studio_mesh_195
+    4300264: s4studio_mesh_196
+    4300266: s4studio_mesh_199
+    4300268: s4studio_mesh_200
+    4300270: s4studio_mesh_203
+    4300272: s4studio_mesh_204
+    4300274: Object053
+    4300276: Object054
+    4300278: Object055
+    4300280: Object056
+    4300282: Object057
+    4300284: Object058
+    4300286: Object059
+    4300288: Object060
+    4300290: Object061
+    4300292: Object062
+    4300294: Object063
+    4300296: Object064
+    4300298: Object065
+    4300300: Object066
+    4300302: Object067
+    4300304: Rectangle013
+    4300306: Rectangle014
+    4300308: Rectangle015
+    4300310: Rectangle016
+    4300312: Rectangle017
+    4300314: Rectangle018
+    4300316: s4studio_mesh_157
+    4300318: s4studio_mesh_158
+    4300320: s4studio_mesh_159
+    4300322: s4studio_mesh_160
+    4300324: s4studio_mesh_161
+    4300326: s4studio_mesh_162
+    4300328: s4studio_mesh_163
+    4300330: s4studio_mesh_164
+    4300332: s4studio_mesh_165
+    4300334: s4studio_mesh_166
+    4300336: s4studio_mesh_168
+    4300338: s4studio_mesh_170
+    4300340: s4studio_mesh_171
+    4300342: s4studio_mesh_174
+    4300344: s4studio_mesh_175
+    4300346: s4studio_mesh_178
+    4300348: s4studio_mesh_179
+    4300350: s4studio_mesh_182
+    4300352: s4studio_mesh_183
+    4300354: s4studio_mesh_186
+    4300356: s4studio_mesh_187
+    4300358: s4studio_mesh_188
+    4300360: s4studio_mesh_189
+    4300362: s4studio_mesh_190
+    4300364: s4studio_mesh_193
+    4300366: s4studio_mesh_194
+    4300368: s4studio_mesh_197
+    4300370: s4studio_mesh_198
+    4300372: s4studio_mesh_201
+    4300374: s4studio_mesh_202
+    4300376: s4studio_mesh_205
+    4300378: s4studio_mesh_206
+    4300380: s4studio_mesh_207
+    4300382: s4studio_mesh_208
+    4300384: s4studio_mesh_209
+    4300386: s4studio_mesh_210
+    4300388: s4studio_mesh_211
+    4300390: s4studio_mesh_212
+    4300392: s4studio_mesh_213
+    4300394: s4studio_mesh_214
+    4300396: s4studio_mesh_216
+    4300398: s4studio_mesh_217
+    4300400: s4studio_mesh_218
+    4300402: s4studio_mesh_219
+    4300404: s4studio_mesh_220
+    4300406: s4studio_mesh_221
+    4300408: s4studio_mesh_223
+    4300410: s4studio_mesh_224
+    4300412: s4studio_mesh_225
+    4300414: s4studio_mesh_284
+    4300416: s4studio_mesh_291
+    4300418: s4studio_mesh_236
+    4300420: s4studio_mesh_238
+    4300422: s4studio_mesh_241
+    4300424: s4studio_mesh_242
+    4300426: s4studio_mesh_245
+    4300428: s4studio_mesh_246
+    4300430: s4studio_mesh_249
+    4300432: s4studio_mesh_250
+    4300434: s4studio_mesh_253
+    4300436: s4studio_mesh_254
+    4300438: s4studio_mesh_260
+    4300440: s4studio_mesh_261
+    4300442: s4studio_mesh_264
+    4300444: s4studio_mesh_265
+    4300446: s4studio_mesh_268
+    4300448: s4studio_mesh_269
+    4300450: s4studio_mesh_272
+    4300452: s4studio_mesh_273
+    4300454: Object068
+    4300456: Object069
+    4300458: Object070
+    4300460: Object071
+    4300462: Object072
+    4300464: Object073
+    4300466: Object074
+    4300468: Object075
+    4300470: Object076
+    4300472: Object077
+    4300474: Object078
+    4300476: Object079
+    4300478: Object080
+    4300480: Object081
+    4300482: Object082
+    4300484: Rectangle019
+    4300486: Rectangle020
+    4300488: Rectangle021
+    4300490: Rectangle022
+    4300492: Rectangle023
+    4300494: Rectangle024
+    4300496: s4studio_mesh_226
+    4300498: s4studio_mesh_227
+    4300500: s4studio_mesh_228
+    4300502: s4studio_mesh_229
+    4300504: s4studio_mesh_230
+    4300506: s4studio_mesh_231
+    4300508: s4studio_mesh_232
+    4300510: s4studio_mesh_233
+    4300512: s4studio_mesh_234
+    4300514: s4studio_mesh_235
+    4300516: s4studio_mesh_237
+    4300518: s4studio_mesh_239
+    4300520: s4studio_mesh_240
+    4300522: s4studio_mesh_243
+    4300524: s4studio_mesh_244
+    4300526: s4studio_mesh_247
+    4300528: s4studio_mesh_248
+    4300530: s4studio_mesh_251
+    4300532: s4studio_mesh_252
+    4300534: s4studio_mesh_255
+    4300536: s4studio_mesh_256
+    4300538: s4studio_mesh_257
+    4300540: s4studio_mesh_258
+    4300542: s4studio_mesh_259
+    4300544: s4studio_mesh_262
+    4300546: s4studio_mesh_263
+    4300548: s4studio_mesh_266
+    4300550: s4studio_mesh_267
+    4300552: s4studio_mesh_270
+    4300554: s4studio_mesh_271
+    4300556: s4studio_mesh_274
+    4300558: s4studio_mesh_275
+    4300560: s4studio_mesh_276
+    4300562: s4studio_mesh_277
+    4300564: s4studio_mesh_278
+    4300566: s4studio_mesh_279
+    4300568: s4studio_mesh_280
+    4300570: s4studio_mesh_281
+    4300572: s4studio_mesh_282
+    4300574: s4studio_mesh_283
+    4300576: s4studio_mesh_285
+    4300578: s4studio_mesh_286
+    4300580: s4studio_mesh_287
+    4300582: s4studio_mesh_288
+    4300584: s4studio_mesh_289
+    4300586: s4studio_mesh_290
+    4300588: s4studio_mesh_292
+    4300590: s4studio_mesh_293
+    4300592: s4studio_mesh_294
+    4300594: Object089
+    4300596: SYJ_jiajudian01
+    4300598: SYJ_jiajudian01
+    4300600: Object007
+    4300602: baobian
+    4300604: Circle001
+    4300606: syj_caodi01
+    4300608: sjy_zxdibiao02
+    4300610: Circle002
+    4300612: Circle004
+    4300614: sjy_zxdibiao03
+    4300618: sjy_zxdibiao06
+    4300620: sjy_zxdibiao07
+    4300622: sjy_zxdibiao08
+    4300624: Object021
+    4300626: Object022
+    4300628: sjy_zxdibiao004
+    4300630: meng
+    4300632: yijia_2
+    4300634: yijia_1
+    4300636: yifu_1
+    4300638: yifu_4
+    4300640: yilou
+    4300642: dimian
+    4300644: boli
+    4300646: yijia_3
+    4300648: xiegui_1
+    4300650: xiegui_2
+    4300652: qiantai
+    4300654: yifu_2
+    4300656: yifu_3
+    4300658: erlou
+    4300660: Object013
+    4300662: Object014
+    4300664: meng
+    4300666: zhuozi
+    4300668: yuanzhuo
+    4300670: yilou
+    4300672: erlou
+    4300674: dimian
+    4300676: boli
+    4300678: jiugui
+    4300680: batai
+    4300682: shafa
+    4300684: bataiyi
+    4300686: yuanzhuoyi
+    4300688: meng
+    4300690: zhantai
+    4300692: boli
+    4300694: erlou
+    4300696: dimian
+    4300698: yilou
+    4300700: syj_zxlangan01
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 01 - Default
+    second: {fileID: 2100000, guid: 199252df48000fa4db8d464fe04e2d02, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 02 - Default
+    second: {fileID: 2100000, guid: 4ce110e49862b834e8249f8693d1c660, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 06 - Default
+    second: {fileID: 2100000, guid: d2b8ea2de4e0a574097093f9c4376ea7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 07 - Default
+    second: {fileID: 2100000, guid: 332def5d493dd6a4fa15e96eb0f64b64, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 11 - Default
+    second: {fileID: 2100000, guid: 36b4cb0a67666c44f97473aaf2a3aab2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 12 - Default
+    second: {fileID: 2100000, guid: 6f1dcba9d4ef72242ad25bcbd23a3c35, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 18 - Default
+    second: {fileID: 2100000, guid: c28da13d154b01f42aa54778bd9f8116, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 20 - Default
+    second: {fileID: 2100000, guid: a6c0632c3d274c54bb1967c0afd3a2fa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 21 - Default
+    second: {fileID: 2100000, guid: 99c8b726527469846921829a5e5eb7a2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 21 - Defaultsdf
+    second: {fileID: 2100000, guid: 4603c056e95067b4ea4f03a3fc28605c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #0'
+    second: {fileID: 2100000, guid: ef33fb24a1b2a114caa35a681f4aa69d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #1'
+    second: {fileID: 2100000, guid: c915168c77ac3d84aa4fab66e3c1a84a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #10'
+    second: {fileID: 2100000, guid: 4a597f7001fcb4a4d9e943e126aab612, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #11'
+    second: {fileID: 2100000, guid: 0661bfd65a8440046ad220f97cfdb646, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #12'
+    second: {fileID: 2100000, guid: aa584e7cf282d4a4681839ab94cee789, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #15'
+    second: {fileID: 2100000, guid: 5fbe32f7e9d9444489b6d5a92e15eec5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #16'
+    second: {fileID: 2100000, guid: 926f6483e2a2eda4bb51ea31310ee325, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #18'
+    second: {fileID: 2100000, guid: 88cde1f415c547d4fbffb704ca537569, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #19'
+    second: {fileID: 2100000, guid: 4833b8ad77e08244b9e903a5228dde58, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #2'
+    second: {fileID: 2100000, guid: 2ad9d76860734c9409121a8f394233d3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #20'
+    second: {fileID: 2100000, guid: 3322b775e6efe7149a7c3baa830e2c93, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #21'
+    second: {fileID: 2100000, guid: e6d5678c2dd5ac7478624470d7d9353e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #25'
+    second: {fileID: 2100000, guid: 883c2cfb9d3c75542a8d1e3d0ca2b71a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #26'
+    second: {fileID: 2100000, guid: e0f8e3a124081c94ca34777718264e95, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #3'
+    second: {fileID: 2100000, guid: 895671fa04b1bdc43b64c947349dcc11, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #35'
+    second: {fileID: 2100000, guid: 0fc178bd6f03dab4b96fda4437d29700, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #4'
+    second: {fileID: 2100000, guid: 3e9f9a1fcb8df434bb54c45663d20e2f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #5'
+    second: {fileID: 2100000, guid: 4065cb505571ae94bbf7baad45db81ba, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #6'
+    second: {fileID: 2100000, guid: 1dab29395cc2045488dbe6cf5fb65777, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #7'
+    second: {fileID: 2100000, guid: 5efccf53d683ea4459dca5d5e5f45c14, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #8'
+    second: {fileID: 2100000, guid: 368248f95aafd5e4fbba381effdf2bc8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #9'
+    second: {fileID: 2100000, guid: 951e537834451dd4b892b8ffa7115977, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: ee457ad673c0f50498a69e2bedd1cd2c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SYJ_ciqidian_1
+    second: {fileID: 2100000, guid: f0bf5b68160874542882b2c78733126f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SYJ_ciqidian_2
+    second: {fileID: 2100000, guid: 3519ce47c45f40d48b0cb5ddefccce19, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SYJ_jiajudian01
+    second: {fileID: 2100000, guid: a6c0632c3d274c54bb1967c0afd3a2fa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SYJ_jiajudian02
+    second: {fileID: 2100000, guid: 6c9d503a815734b4f94ca4aaeefd8f7b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SYJ_jiajudian03
+    second: {fileID: 2100000, guid: 6c13e72569ee358429f3041c82516ff5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SYJ_jiajudian04
+    second: {fileID: 2100000, guid: d101b7155726b9c4bbaf9eb12d7665bf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SYJ_jiajudian05
+    second: {fileID: 2100000, guid: 70d54c82d34a1e44492929aece84def9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SYJ_jianzhu01
+    second: {fileID: 2100000, guid: 27f4fae10b227c44b943628c38530694, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SYJ_jianzhu02
+    second: {fileID: 2100000, guid: 21e0bd41d62f0c647bfc42e2583cdf02, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SYJ_jianzhu03
+    second: {fileID: 2100000, guid: 5d1b76e346a9675449dad7e7f02c6e7a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SYJ_jianzhu04
+    second: {fileID: 2100000, guid: 728c34a4786b5a34cb8f716eb6271184, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SYJ_jianzhu05
+    second: {fileID: 2100000, guid: 364b16b42ad898347914939f090bd3df, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SYJ_jianzhu06
+    second: {fileID: 2100000, guid: 2e0706256012f0c4cbc8b5e728caad11, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SYJ_jianzhu07
+    second: {fileID: 2100000, guid: d391a4a5e55c7e2409a4528929f672a6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SYJ_jianzhu08
+    second: {fileID: 2100000, guid: 08007bed4b5c82447863a4395253463d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SYJ_jianzhu09
+    second: {fileID: 2100000, guid: b896862ad5b7c944d8afa4bb7f3015dd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SYJ_jianzhu10
+    second: {fileID: 2100000, guid: 129eb38d79274f549ad6601acdd17119, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SYJ_jianzhu11
+    second: {fileID: 2100000, guid: ed226853b8615b846aa1120383d03bcf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SYJ_jiudian_2
+    second: {fileID: 2100000, guid: 5b9f7faca5e802f4888d2cc748e3de66, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SYJ_qiantai_1
+    second: {fileID: 2100000, guid: 1b0c9ffefd785304da1a55bac7df0be2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SYJ_renxingdao01
+    second: {fileID: 2100000, guid: 9072027063f367248ab3d3b1f6f50096, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SYJ_renxingdao02
+    second: {fileID: 2100000, guid: 033298a7849c252409573cf3120e9fc5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SYJ_xiedian_1
+    second: {fileID: 2100000, guid: 4f0dbaf814fd1064fbbb61eda06945fa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SYJ_xiegui_1
+    second: {fileID: 2100000, guid: 092b34acbaaa4f946b3d203337b8ad39, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SYJ_xiegui_2
+    second: {fileID: 2100000, guid: 483b528eac7f09840ad98ca880502ec5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SYJ_xiegui_3
+    second: {fileID: 2100000, guid: e82ab3d87ea3e3e4096ebb5dff835fcc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SYJ_yifu_1
+    second: {fileID: 2100000, guid: 7bffa81ed34b8bd439e48b60d4e46a37, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SYJ_yifu_2
+    second: {fileID: 2100000, guid: 9d18b3d93c497ad49a0566d7e852700e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SYJ_yifu_3
+    second: {fileID: 2100000, guid: 9ebd70b7a4f50f74991d7469a140e7b9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SYJ_yifu_4
+    second: {fileID: 2100000, guid: 2429505678596ca4094bd22411e6f032, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SYJ_yuanjing01
+    second: {fileID: 2100000, guid: 8d6515423d58c974f90f4fa9de7b5ec7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: baobian
+    second: {fileID: 2100000, guid: 4603c056e95067b4ea4f03a3fc28605c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: boli
+    second: {fileID: 2100000, guid: b989ce26621c3364799e1d47ff3ef406, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: boli_
+    second: {fileID: 2100000, guid: 50d4605ec2e496a4d9d324a735a632c8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ck
+    second: {fileID: 2100000, guid: 5f0b71514f75e944a8d74b0291895694, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sjy_zxdibiao01
+    second: {fileID: 2100000, guid: f9c4f377735aa9d459bb9b7c79b16e79, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sjy_zxdibiao02
+    second: {fileID: 2100000, guid: bedc43523a66afe42b5a3399e82aa088, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sjy_zxdibiao03
+    second: {fileID: 2100000, guid: 91c6997375ea8614c8ba764977018ec6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sjy_zxdibiao06
+    second: {fileID: 2100000, guid: 480d1460c3814fb4f9eee9735da4b8f7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sjy_zxdibiao07
+    second: {fileID: 2100000, guid: 48f4d65ac7536b84190eb10b3645793f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sjy_zxdibiao08
+    second: {fileID: 2100000, guid: 332def5d493dd6a4fa15e96eb0f64b64, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: syj_zxpenquan01
+    second: {fileID: 2100000, guid: 1e3007a9e588bfe478898cbeeb81e717, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

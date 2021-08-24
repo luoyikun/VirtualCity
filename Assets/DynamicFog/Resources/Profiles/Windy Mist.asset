@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9c2888456c2e419aaf84d25bcaf04a2, type: 3}
+  m_Name: Windy Mist
+  m_EditorClassIdentifier: 
+  effectType: 0
+  enableDithering: 0
+  ditherStrength: 0.03
+  alpha: 0.75
+  noiseStrength: 0.6
+  noiseScale: 0.1
+  distance: 0
+  distanceFallOff: 0.07
+  maxDistance: 0.999
+  maxDistanceFallOff: 0
+  height: 2
+  maxHeight: 100
+  heightFallOff: 1
+  baselineHeight: 0
+  clipUnderBaseline: 0
+  turbulence: 2
+  speed: 0.06
+  windDirection: {x: 1, y: 0, z: 1}
+  color: {r: 0.89, g: 0.89, b: 0.89, a: 1}
+  color2: {r: 0.89, g: 0.89, b: 0.89, a: 1}
+  skyHaze: 35
+  skySpeed: 0.3
+  skyNoiseStrength: 0.32
+  skyAlpha: 0.33
+  useXZDistance: 0
+  scattering: 0.7
+  scatteringColor: {r: 1, g: 1, b: 0.8, a: 1}

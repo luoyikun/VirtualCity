@@ -1,0 +1,108 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Mobile Lake_zhongguofeng
+  m_Shader: {fileID: 4800000, guid: f4bc3d7383ad126428e85b6420ef18db, type: 3}
+  m_ShaderKeywords: _USEREFLECTIONS_ON
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 1
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _FoamTexture:
+        m_Texture: {fileID: 2800000, guid: 199d83fd2aca7214481411272c61f368, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ReflectionTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _BumpScale: 1
+    - _Cutoff: 0.5
+    - _DepthTransparency: 11.3
+    - _DetailNormalMapScale: 1
+    - _Distortion: 0.5
+    - _DstBlend: 0
+    - _Fade: 0.55
+    - _FoamBlend: 0.7
+    - _FoamContrast: 0.4
+    - _FoamIntensity: 0.91
+    - _FoamSpeed: 120
+    - _FoamTiling: 25.1
+    - _FoamVisibility: 0.5
+    - _Gloss: 0.31
+    - _Glossiness: 0.5
+    - _LightWrapping: 4.8
+    - _Metallic: 0
+    - _Mode: 0
+    - _NormalTiling: 5
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _Reflectionintensity: 1
+    - _Refraction: 0.2
+    - _ShallowDeepBlend: 4.15
+    - _ShoreFade: 0.3
+    - _ShoreTransparency: 0.13
+    - _Specular: 1.68
+    - _SrcBlend: 1
+    - _UVSec: 0
+    - _UseReflections: 1
+    - _WaveSpeed: 140.11
+    - _ZWrite: 1
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _DeepWaterColor: {r: 0.28773582, g: 0.61985916, b: 1, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _FoamColor: {r: 0.6928622, g: 0.75513124, b: 0.8490566, a: 1}
+    - _ShallowWaterColor: {r: 0.17123532, g: 0.76674783, b: 0.9811321, a: 1}
+    - _SpecularColor: {r: 0.47009614, g: 0.5250833, b: 0.7169812, a: 1}

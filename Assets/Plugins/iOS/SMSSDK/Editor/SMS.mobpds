@@ -1,0 +1,7 @@
+{
+    "folders":     ["/SDK"],
+    "buildSettings": { 
+        "OTHER_LDFLAGS" : ["-lz","-lstdc++"]
+    },
+    "permissions":{"NSContactsUsageDescription":"开启通讯录好友功能"}
+}

@@ -1,0 +1,131 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: SWS_PondDemo_Material
+  m_Shader: {fileID: 4800000, guid: 644d4419f6d30214892dd65158332ba7, type: 3}
+  m_ShaderKeywords: _ENABLE_VC_ON _KEYWORD0_ON _LIGHTING_ON _NORMAL_MAP_ON _PIXELATE_ON
+    _RT_REFRACTION_ON _SECONDARYFOAMALWAYSVISIBLE_ON _WORLDSPACETILING_ON
+  m_LightmapFlags: 0
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _ColorGradient:
+        m_Texture: {fileID: 2800000, guid: 438c3545ac6a3044abbf188f35dec392, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DepthTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DummyTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _GradientTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Normals:
+        m_Texture: {fileID: 2800000, guid: de88f59d0cf94b547a55c619a95fd47f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Reflection:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ReflectionTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RefractionTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Shadermap:
+        m_Texture: {fileID: 2800000, guid: ed94ba38312aebc42be9f8e30aede540, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Cutoff: 0.5
+    - _Depth: 10.3
+    - _Depthdarkness: 0
+    - _ENABLE_GRADIENT: 0
+    - _ENABLE_NORMALS: 1
+    - _ENABLE_SHADOWS: 0
+    - _ENABLE_VC: 1
+    - _EdgeFade: 3
+    - _EnableVertexColors: 1
+    - _Float3: 0.85
+    - _FoamDistortion: 0.06
+    - _FoamOpacity: -0.39
+    - _FoamSize: 1
+    - _FoamSpeed: 0.797
+    - _FoamTiling: 1
+    - _Fresnelexponent: 1.38
+    - _Glossiness: 0.898
+    - _HighlightPanning: 0
+    - _IntersectionDistortion: 0.1
+    - _Keyword0: 1
+    - _LIGHTING: 0
+    - _MACRO_WAVES: 1
+    - _MacroBlendDistance: 250
+    - _MaskClipValue: 0.5
+    - _Metallicness: 0
+    - _NORMAL_MAP: 1
+    - _NormalStrength: 0.44
+    - _NormalTiling: 0.763
+    - _Pixelate: 0
+    - _RT_REFRACTION: 0
+    - _Reflection: 0
+    - _ReflectionFresnel: 3.53
+    - _ReflectionRefraction: 0.077
+    - _ReflectionStrength: 0
+    - _RefractionAmount: 0.032
+    - _RimContrast: 1
+    - _RimDistance: 1.13
+    - _RimDistortion: 0.192
+    - _RimSize: 18.9
+    - _Rimfalloff: 3.9
+    - _Rimtiling: 0.3
+    - _SECONDARY_WAVES: 0
+    - _SurfaceHighlight: 0
+    - _SurfaceHighlightsDistortion: 0.77
+    - _SurfaceHighlightsSpeed: 0.067
+    - _SurfaceHightlighttiling: 0.15
+    - _Surfacehightlightsize: 0
+    - _Tessellation: 20
+    - _Tiling: 0.7500001
+    - _Transparency: 1
+    - _USE_VC_INTERSECTION: 0
+    - _Unlit: 0
+    - _UseIntersectionFoam: 0
+    - _UseIntersectionHighlight: 1
+    - _WaveFoam: 0
+    - _WaveHeight: 0.308
+    - _WaveSize: 1.1
+    - _Wavefoam: 1
+    - _Wavesspeed: 1.77
+    - _Wavesstrength: 0.093
+    - _Wavetint: 0
+    - _Worldspacetiling: 1
+    - __dirty: 0
+    m_Colors:
+    - _FresnelColor: {r: 0.29411763, g: 0.64949304, b: 1, a: 0}
+    - _RimColor: {r: 0.8113207, g: 0.8113207, b: 0.8113207, a: 0.221}
+    - _WaterColor: {r: 0.22733748, g: 0.5372549, b: 0.8117647, a: 0.39215687}
+    - _WaterShallowColor: {r: 0.764151, g: 0.764151, b: 0.764151, a: 1}
+    - _WaveDirection: {r: -0.42, g: 0, b: -0.46, a: 0}
