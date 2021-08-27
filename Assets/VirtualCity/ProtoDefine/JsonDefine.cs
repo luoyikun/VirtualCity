@@ -21,8 +21,8 @@ public class HomeBuildPos
 
 public class OpenAreaCast
 {
-    public int d;
-    public int g;
+    public int d = 1;
+    public int g = 1;
 }
 
 public class PosAndAngle

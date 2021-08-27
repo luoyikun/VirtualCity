@@ -10,7 +10,7 @@ public class PartProperties {
 
 
 [ProtoMember(1)]
-	public long? id;
+	public long? id =1;
 
 	/**
 	 中文名
@@ -34,13 +34,13 @@ public class PartProperties {
 	 icon名称
 	 */
 [ProtoMember(5)]
-	public string iconName;
+	public string iconName = "jj_ty_chuang01";
 
 	/**
 	 0 代表 室内 1 室外
 	 */
 [ProtoMember(6)]
-	public int inOutType;
+	public int inOutType = 0;
 
 	/**
 	 0：室内普通，  1：室内桌子  2：室内桌上   3：室外
@@ -54,7 +54,7 @@ public class PartProperties {
 	 模型数据
 	 */
 [ProtoMember(8)]
-	public string modleData;
+	public string modleData = "jj_ty_chuang01";
 
 	/**
 	 评分
@@ -66,7 +66,7 @@ public class PartProperties {
 	 类别code
 	 */
 [ProtoMember(10)]
-	public int type;
+	public int type = 0;
 
 	/**
 	 容器类别code

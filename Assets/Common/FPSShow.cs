@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProtoDefine;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
@@ -31,6 +32,25 @@ public class FPSShow : MonoBehaviour {
             }
             //GC.Collec();
             //SceneManager.LoadScene("Test");
+        }
+
+        if (GUI.Button(new Rect(0,150,50,50),"进入家园"))
+        {
+            AppConst.m_isOffline = true;
+            VirtualCityMgr.SetOfflineData();
+            VirtualCityMgr.GotoHometown(EnMyOhter.My);
+        }
+
+        if (GUI.Button(new Rect(0, 200, 50, 50), "进入房屋"))
+        {
+            AppConst.m_isOffline = true;
+            VirtualCityMgr.SetOfflineData();
+
+
+
+            House houseInfo = new House();
+
+            VirtualCityMgr.GotoHome(EnMyOhter.My, houseInfo);
         }
     }
 }

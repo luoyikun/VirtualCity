@@ -22,37 +22,37 @@ namespace ProtoDefine
         /**
          金币数量
          */
-        [ProtoMember(3)] public int goldNum;
+        [ProtoMember(3)] public int goldNum = 999999;
 
         /**
          钻石数量
          */
-        [ProtoMember(4)] public int diamondNum;
+        [ProtoMember(4)] public int diamondNum = 999999;
 
         /**
          购物金数量
          */
-        [ProtoMember(5)] public double sMoneyNum;
+        [ProtoMember(5)] public double sMoneyNum = 999999;
 
         /**
          现金数量
          */
-        [ProtoMember(6)] public double moneyNum;
+        [ProtoMember(6)] public double moneyNum = 999999;
 
         /**
          消费的钻石数量
          */
-        [ProtoMember(7)] public int dCostNum;
+        [ProtoMember(7)] public int dCostNum = 999999;
 
         /**
          获取的购物金和现金数量
          */
-        [ProtoMember(8)] public double mIncome;
+        [ProtoMember(8)] public double mIncome = 999999;
 
         /**
          资产
          */
-        [ProtoMember(9)] public int asset;
+        [ProtoMember(9)] public int asset = 999999;
 
         /**
          提现限额

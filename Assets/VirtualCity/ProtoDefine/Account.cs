@@ -107,7 +107,7 @@ public class Account {
 	 模型id
 	 */
 [ProtoMember(17)]
-	public long modleId;
+	public long modleId = 1;
 
 	/**
 	 性别：0 ‘女’，1：'男'

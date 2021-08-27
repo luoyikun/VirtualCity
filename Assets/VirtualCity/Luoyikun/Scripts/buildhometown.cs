@@ -87,7 +87,7 @@ public class buildhometown : MonoBehaviour
     public Dictionary<string, Land> m_dicLand = new Dictionary<string, Land>();
 
     //地块上home信息
-    public Dictionary<string, House> m_dicHome = new Dictionary<string, House>();
+    public Dictionary<string, House> m_dicHome = new Dictionary<string, House>(); //key为地块的索引，house是房屋的信息，包含摆放的家具的信息
     long m_playerId;
 
     public Transform m_qizhongjiPar;
@@ -1136,34 +1136,11 @@ public class buildhometown : MonoBehaviour
     }
     public void Update()
     {
-        //if (Input.GetMouseButton(0))
-        //{
-
-        //    if (EventSystem.current.IsPointerOverGameObject())
-        //    {
-        //        //Debug.Log("left-click over a GUI element!");
-        //        return;
-        //    }
-
-        //    if (!bInTouch)
-        //    {
-        //        bInTouch = true;
-
-        //    }
-        //}
-        //else
-        //{
-        //    if (bInTouch)
-        //    {
-        //        bInTouch = false;
-
-        //        EventManager.Instance.DispatchEvent(Common.EventStr.DeleteBtHomeHeadUi);
-        //    }
-        //}
-
+        
+        //有按钮一直按下，在PC端是鼠标左键一直按下。。移动端可代表一直在滑动
         if (Input.GetMouseButton(0))
         {
-
+            //点击到UI上
             if (Application.isMobilePlatform && Input.touchCount > 0)
             {
                 if (EventSystem.current.IsPointerOverGameObject(Input.GetTouch(0).fingerId))
@@ -1174,6 +1151,8 @@ public class buildhometown : MonoBehaviour
                 return;
             }
 
+            //未点在UI上，
+            //之前没按下
             if (bInTouch == false)
             {
 
@@ -1182,20 +1161,10 @@ public class buildhometown : MonoBehaviour
                 mousePosLast = Input.mousePosition;
                 bTemporarySelect = false;
                 Dragged = false;
-
-                //Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-                //RaycastHit hit;
-                //if (Physics.Raycast(ray, out hit) && (hit.collider.gameObject.tag == "HtBox"))
-                //{
-                //    m_curClickBox = hit.collider.gameObject;
-                //}
-                //else
-                //{
-                //    m_curClickBox = null;
-                //}
             }
-            else
+            else //之前按下了
             {
+                //与上次点击距离超过阈值为滑动
                 if (Vector3.Distance(Input.mousePosition, mousePosLast) > 0.01f)
                 {
                     if (!Dragged)
@@ -1203,7 +1172,7 @@ public class buildhometown : MonoBehaviour
                         Dragged = true;
                     }
                 }
-                else
+                else //按下，且一直长按超过阈值 为点击
                 {
                     if (!Dragged)
                     {
@@ -1219,7 +1188,7 @@ public class buildhometown : MonoBehaviour
                 }
             }
         }
-        else
+        else //触摸抬起或者按下，实际处理抬起事件
         {
             if (bInTouch)
             {
@@ -1227,11 +1196,11 @@ public class buildhometown : MonoBehaviour
 
                 if (Dragged)
                 {
-
+                    //在持续期间判断为拖动，执行拖动逻辑
                 }
-                else
+                else//执行点击
                 {
-                    if (bTemporarySelect)
+                    if (bTemporarySelect) //长按
                     {
                     }
                     else

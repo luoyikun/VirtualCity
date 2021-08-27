@@ -101,7 +101,10 @@ public class chatpanel : UGUIPanel
         ClickListener.Get(DownChatWindow.transform.GetChild(1).gameObject).onClick = clickOpenChat;
         ClickListener.Get(DownChatWindow.transform.GetChild(0).gameObject).onClick = clickOpenChat;
         m_RspGSIM = DataMgr.m_RspGetSocialityInfoMessage;
-        InitChat(m_RspGSIM.friendList, m_RspGSIM.inChatGroup, m_RspGSIM.systemNotifies, m_RspGSIM.proxyUsers);
+        if (m_RspGSIM != null)
+        {
+            InitChat(m_RspGSIM.friendList, m_RspGSIM.inChatGroup, m_RspGSIM.systemNotifies, m_RspGSIM.proxyUsers);
+        }
     }
     private void OnEnable()
     {

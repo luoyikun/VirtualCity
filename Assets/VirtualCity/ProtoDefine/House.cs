@@ -9,12 +9,12 @@ public class House{
 [ProtoMember(1)]
     public string id;
 [ProtoMember(2)]
-    public long? modelId;
+    public long? modelId = 1;
     //摆放状态
 [ProtoMember(3)]
-    public Dictionary<string,PutStatus> putStatusList;
+    public Dictionary<string,PutStatus> putStatusList = new Dictionary<string, PutStatus>();
 [ProtoMember(4)]
-    public string landCode;
+    public string landCode = "1";
     //点赞数量
 [ProtoMember(5)]
     public long zan;

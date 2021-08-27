@@ -11,6 +11,7 @@ public enum EnTestServer
     Out//外网正式
 }
 public class AppConst {
+    public static bool m_isOffline = false; 
     //打包用切换内外网
     public const EnTestServer m_enTestServer = EnTestServer.OutTest;
 

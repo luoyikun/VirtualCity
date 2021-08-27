@@ -5,13 +5,13 @@ namespace ProtoDefine
  public class RoleProperties
 {
  [ProtoMember(1)]
-private  long? id;
+private  long? id = 1;
 
 /**
  性别
 */
  [ProtoMember(2)]
-private  int? sex;
+private  int? sex = 1;
 
 /**
  头像
@@ -23,7 +23,7 @@ private  string icon;
  模型数据
 */
  [ProtoMember(4)]
-private  string modelDate;
+private  string modelDate = "juese_man01";
 
  [ProtoMember(5)]
 private  string createdate;

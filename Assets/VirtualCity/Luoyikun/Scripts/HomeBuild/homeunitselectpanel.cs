@@ -39,8 +39,12 @@ public class homeunitselectpanel : UGUIPanel {
     int m_maxItem = 0;
     int m_maxPage = 0;
 
-    List<HouseParts> m_listHomeUnit = new List<HouseParts>();
-    Dictionary<EnInOutDoor, Dictionary<long, List<HouseParts>>> m_dicShow = new Dictionary<EnInOutDoor, Dictionary<long, List<HouseParts>>>();
+    List<HouseParts> m_listHomeUnit = new List<HouseParts>() { new HouseParts()};
+    Dictionary<EnInOutDoor, Dictionary<long, List<HouseParts>>> m_dicShow = new Dictionary<EnInOutDoor, Dictionary<long, List<HouseParts>>>()
+    {
+        {EnInOutDoor.InDoor,new Dictionary<long, List<HouseParts>>() },
+        {EnInOutDoor.OutDoor,new Dictionary<long, List<HouseParts>>() },
+    };
     // Use this for initialization
     void Start() {
 
@@ -79,8 +83,21 @@ public class homeunitselectpanel : UGUIPanel {
             UpdateLayerIdx(1);
             HomeMgr.m_instance.m_isFirtEnter = false;
         }
-        SendReqGetHousePartMessage();
+        
         NetEventManager.Instance.AddEventListener(MsgIdDefine.RspGetHousePartMessage, OnNetRspGetHousePartMessage);
+
+        if (AppConst.m_isOffline == true)
+        {
+            DataDeal();
+            SetScroll();
+
+            ScroolInit();
+            m_togglePar.GetChild(0).GetComponent<TabEvent>().SetOn(true);
+        }
+        else {
+
+            SendReqGetHousePartMessage();
+        }
     }
 
     void OnNetRspGetHousePartMessage(byte[] buf)
@@ -123,6 +140,10 @@ public class homeunitselectpanel : UGUIPanel {
             HouseParts part = m_listHomeUnit[i];
             PartProperties partCeHua = DataMgr.m_dicPartProperties[(long)part.moudelId];
 
+            if (m_dicShow[(EnInOutDoor)partCeHua.inOutType].ContainsKey(partCeHua.type) == false)
+            {
+                m_dicShow[(EnInOutDoor)partCeHua.inOutType][partCeHua.type] = new List<HouseParts>();
+            }
             m_dicShow[(EnInOutDoor)partCeHua.inOutType][partCeHua.type].Add(part);
         }
 

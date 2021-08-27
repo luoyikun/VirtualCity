@@ -1848,7 +1848,8 @@ public class PublicFunc : MonoBehaviour
     {
         if (DataMgr.m_dicRoleProperties.ContainsKey(modelId) == false)
         {
-            UnityEngine.Debug.Log("字典中不包含头像");
+            UnityEngine.Debug.LogError("字典中不包含头像:"+modelId);
+            return "juese_man01";
         }
         string headImgName = DataMgr.m_dicRoleProperties[modelId].Icon;
 

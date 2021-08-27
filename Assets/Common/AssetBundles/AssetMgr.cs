@@ -1,4 +1,4 @@
-﻿//#define EditorLoadAb
+﻿#define EditorLoadAb
 using AssetBundles;
 using System;
 using System.Collections;

@@ -70,16 +70,24 @@ public class LocationMarker : MonoBehaviour {
                     pay.SetContent("提示", "确认开垦此地块", DataMgr.m_dicOpenAreaCast[areaNum].g, DataMgr.m_dicOpenAreaCast[areaNum].d);
                     pay.m_GoldPay = () =>
                     {
-                        ReqOpenAreaMessage open = new ReqOpenAreaMessage();
-                        open.code = m_id;
-                        open.costDiamond = 0;
-                        GameSocket.Instance.SendMsgProto(MsgIdDefine.ReqOpenAreaMessage, open);
-
-                        if (DataMgr.m_isNewGuide == true)
+                        if (AppConst.m_isOffline == false)
                         {
-                            hometwonbuildheadpanel.m_instance.CloseLocationMarker(DataMgr.m_newBoxId);
-                            hometwonbuildheadpanel.m_instance.CreateLocationMarker(DataMgr.m_newBoxId, EnLand.Space);
-                            //NewGuideMgr.Instance.StartOneNewGuide();
+                            ReqOpenAreaMessage open = new ReqOpenAreaMessage();
+                            open.code = m_id;
+                            open.costDiamond = 0;
+                            GameSocket.Instance.SendMsgProto(MsgIdDefine.ReqOpenAreaMessage, open);
+
+                            if (DataMgr.m_isNewGuide == true)
+                            {
+                                hometwonbuildheadpanel.m_instance.CloseLocationMarker(DataMgr.m_newBoxId);
+                                hometwonbuildheadpanel.m_instance.CreateLocationMarker(DataMgr.m_newBoxId, EnLand.Space);
+                                //NewGuideMgr.Instance.StartOneNewGuide();
+                            }
+                        }
+                        else {
+                            //直接走客户端，开垦好一个地
+                            hometwonbuildheadpanel.m_instance.CloseLocationMarker(m_id);
+                            hometwonbuildheadpanel.m_instance.CreateLocationMarker(m_id, EnLand.Space);
                         }
                     };
                     pay.m_DiamondPay = () =>

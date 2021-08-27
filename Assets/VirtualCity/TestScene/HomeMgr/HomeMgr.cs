@@ -263,7 +263,10 @@ public class HomeMgr : MonoBehaviour {
         //{
         //    StartCoroutine(YieldCreateBuild(it.Value));
         //}
-
+        if (AppConst.m_isOffline == true)
+        {
+            return;
+        }
         foreach (var it in buildhometown.m_instance.m_dicLand)
         {
             if (it.Value.buildId == m_userHomeInfo.id)
@@ -426,7 +429,13 @@ public class HomeMgr : MonoBehaviour {
     {
         m_isFirtEnter = true;
         m_userHomeInfo = info;
-        m_tableHomeInfo = DataMgr.m_dicHomeProperties[(long)m_userHomeInfo.modelId];
+        if (AppConst.m_isOffline == false)
+        {
+            m_tableHomeInfo = DataMgr.m_dicHomeProperties[(long)m_userHomeInfo.modelId];
+        }
+        else {
+            m_tableHomeInfo = new HomeProperties();
+        }
         m_maxLayer = m_tableHomeInfo.floor;
         DataInit();
 
@@ -1265,18 +1274,26 @@ public class HomeMgr : MonoBehaviour {
         if (m_selectUnit != null)
         {
             ChangeLayer();
-            
 
-            if (m_isCreateNew == true)
+            
             {
-                m_newUnit = m_selectUnit;
-                SendCreateNew();
-                m_isCreateNew = false;
+                if (m_isCreateNew == true)
+                {
+                    m_newUnit = m_selectUnit;
+                    SendCreateNew();
+                    m_isCreateNew = false;
+                }
+                else
+                {
+                    SendUpdate();
+                }
             }
-            else {
-                SendUpdate();
+
+            if (AppConst.m_isOffline == true)
+            {
+                OperationSucceed();
             }
-          
+            
         }
 
     }

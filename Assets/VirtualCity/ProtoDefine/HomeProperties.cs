@@ -9,13 +9,13 @@ public class HomeProperties {
 
 
 [ProtoMember(1)]
-	public long? id;
+	public long? id = 1;
 
 	/**
 	 名称
 	 */
 [ProtoMember(2)]
-	public string name;
+	public string name = "xxx";
 
 	/**
 	 评分
@@ -27,13 +27,13 @@ public class HomeProperties {
 	 模型数据
 	 */
 [ProtoMember(4)]
-	public string modleData;
+	public string modleData = "zhuzhai_haozhai01";
 
 	/**
 	 简模
 	 */
 [ProtoMember(5)]
-	public string modleDataGoodJianMo;
+	public string modleDataGoodJianMo = "zhuzhai_haozhai01";
 
 	/**
 	 图标
@@ -45,19 +45,19 @@ public class HomeProperties {
 	 室内起始点
 	 */
 [ProtoMember(7)]
-	public string lookIn;
+	public string lookIn = "0,0,0";
 
 	/**
 	 室外起始点
 	 */
 [ProtoMember(8)]
-	public string lookOut;
+	public string lookOut = "0,0,0";
 
-	/**
-	 楼层
-	 */
-[ProtoMember(9)]
-	public int floor;
+        /**
+         楼层
+         */
+        [ProtoMember(9)]
+	public int floor = 3;
 
 	/**
 	 购买所需金币

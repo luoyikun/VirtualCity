@@ -5,7 +5,8 @@ Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: water_jiayuan
   m_Shader: {fileID: 4800000, guid: 644d4419f6d30214892dd65158332ba7, type: 3}
   m_ShaderKeywords: _ENABLE_VC_ON _KEYWORD0_ON _LIGHTING_ON _NORMAL_MAP_ON _PIXELATE_ON
@@ -126,6 +127,6 @@ Material:
     m_Colors:
     - _FresnelColor: {r: 0.29411763, g: 0.64949304, b: 1, a: 0}
     - _RimColor: {r: 1, g: 1, b: 1, a: 0.221}
-    - _WaterColor: {r: 0.22575551, g: 0.53555566, b: 0.8113207, a: 0.39215687}
+    - _WaterColor: {r: 0.22575468, g: 0.53555566, b: 0.8113207, a: 0.39215687}
     - _WaterShallowColor: {r: 0.5971431, g: 0.6206534, b: 0.6698113, a: 1}
     - _WaveDirection: {r: -1, g: 0, b: 0.09, a: 0}

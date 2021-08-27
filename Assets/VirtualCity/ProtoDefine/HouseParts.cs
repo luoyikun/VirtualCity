@@ -8,11 +8,11 @@ namespace ProtoDefine {
 public class HouseParts {
     /**模型ID*/
 [ProtoMember(1)]
-    public long? moudelId;
+    public long? moudelId = 1;
 
     /**数量*/
 [ProtoMember(2)]
-    public int num;
+    public int num = 99;
 
     public HouseParts() {
     }

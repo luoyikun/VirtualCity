@@ -1,4 +1,4 @@
-﻿//#define EditorLoadAb
+﻿#define EditorLoadAb
 
 using Framework.UI;
 using System.Collections.Generic;
@@ -502,10 +502,16 @@ public class VirtualCityMgr : MonoBehaviour
             {
                 DataMgr.m_dicZan = JsonConvert.DeserializeObject<Dictionary<long, List<string>>>(ret.zanRecodeMap);
             }
-
-            if (NewGuideMgr.SetGuideIdx(DataMgr.m_userOtherData.newStep))
+            if (DataMgr.m_userOtherData != null)
             {
-                NewGuideMgr.Instance.Startup();
+                if (NewGuideMgr.SetGuideIdx(DataMgr.m_userOtherData.newStep))
+                {
+                    NewGuideMgr.Instance.Startup();
+                }
+            }
+            else
+            {
+                NewGuideMgr.SetGuideIdx(-1);
             }
             //if (DataMgr.m_account.hadProxy == 1)
             //{
@@ -1055,6 +1061,20 @@ public class VirtualCityMgr : MonoBehaviour
             }
         }
     }
+
+    #region 离线假数据
+    public static void SetOfflineData()
+    {
+        DataMgr.m_account = new Account();
+        DataMgr.m_account.wallet = new AccountWallet();
+        DataMgr.m_account.id = 1;
+
+        OpenAreaCast cast = new OpenAreaCast();
+        DataMgr.m_dicOpenAreaCast["1"] = cast;
+
+        
+    }
+#endregion
 }
 
 

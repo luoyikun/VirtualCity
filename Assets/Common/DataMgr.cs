@@ -129,16 +129,16 @@ public class DataMgr : MonoBehaviour {
     /**
 * 房屋配置数据
 */
-    public static List<HomeProperties> homeProperties;
+    public static List<HomeProperties> homeProperties = new List<HomeProperties>();
 
-    public static Dictionary<long, HomeProperties> m_dicHomeProperties = new Dictionary<long, HomeProperties>();
+    public static Dictionary<long, HomeProperties> m_dicHomeProperties = new Dictionary<long, HomeProperties>() { { 1, new  HomeProperties() } };
     /**
      * 家具配置数据
      */
 
     public static List<PartProperties> partProperties;
 
-    public static Dictionary<long, PartProperties> m_dicPartProperties = new Dictionary<long, PartProperties>();
+    public static Dictionary<long, PartProperties> m_dicPartProperties = new Dictionary<long, PartProperties>() { { 1, new PartProperties() } };
     /**
      * 建筑配置数据
      */
@@ -165,7 +165,7 @@ public class DataMgr : MonoBehaviour {
 
     //用户角色表
     public static List<RoleProperties> m_listRoleProperties = new List<RoleProperties>();
-    public static Dictionary<long, RoleProperties> m_dicRoleProperties = new Dictionary<long, RoleProperties>();
+    public static Dictionary<long, RoleProperties> m_dicRoleProperties = new Dictionary<long, RoleProperties>() { { 1, new RoleProperties()} };
 
     //商业街商铺表
     public static Dictionary<long, ShopsProperties> m_dicShopsProperties = new Dictionary<long, ShopsProperties>();
