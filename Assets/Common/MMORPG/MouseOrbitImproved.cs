@@ -31,7 +31,7 @@ public class MouseOrbitImproved : MonoBehaviour
 
     int m_fingerId = -1; //  当摇杆移动，控制镜头的手指
     bool m_isClickUi = false;
-    Dictionary<int, bool> m_dicTouch = new Dictionary<int, bool>();
+    Dictionary<int, bool> m_dicTouch = new Dictionary<int, bool>(); //key 为fingerid ，value为是否接触到UI
     Transform m_trans;
      float t = 0.2f;
     public float m_minDis = 1.0f;

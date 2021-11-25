@@ -22,6 +22,7 @@ public class LocalNavMeshBuilder : MonoBehaviour
     Coroutine m_cor = null;
     //IEnumerator Start()
     //{
+    //    StartNavMesh();
     //    while (true)
     //    {
     //        UpdateNavMesh(true);
@@ -81,7 +82,7 @@ public class LocalNavMeshBuilder : MonoBehaviour
         StopAllCoroutines();
     }
 
-    void UpdateNavMesh(bool asyncUpdate = false)
+    public void UpdateNavMesh(bool asyncUpdate = false)
     {
         NavMeshSourceTag.Collect(ref m_Sources);
         var defaultBuildSettings = NavMesh.GetSettingsByID(0);
