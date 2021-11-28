@@ -52,7 +52,7 @@ namespace AssetBundles
 		const string kSimulateAssetBundles = "SimulateAssetBundles";
 	#endif
 	
-		static Dictionary<string, LoadedAssetBundle> m_LoadedAssetBundles = new Dictionary<string, LoadedAssetBundle> ();
+		static Dictionary<string, LoadedAssetBundle> m_LoadedAssetBundles = new Dictionary<string, LoadedAssetBundle> ();//依赖包放这，已经通过www加载完的依赖包
 		static Dictionary<string, WWW> m_DownloadingWWWs = new Dictionary<string, WWW> ();
 		static Dictionary<string, string> m_DownloadingErrors = new Dictionary<string, string> ();
 		static List<AssetBundleLoadOperation> m_InProgressOperations = new List<AssetBundleLoadOperation> ();
@@ -187,8 +187,8 @@ namespace AssetBundles
 				// Wait all the dependent assetBundles being loaded.
 				LoadedAssetBundle dependentBundle;
 				m_LoadedAssetBundles.TryGetValue(dependency, out dependentBundle);
-				if (dependentBundle == null)
-					return null;
+				if (dependentBundle == null)//如果还未www 执行完依赖包，返回null，AssetBundleLoadAssetOperationFull会接着执行
+                    return null;
 			}
 	
 			return bundle;
@@ -505,8 +505,8 @@ namespace AssetBundles
 			// Update all in progress operations
 			for (int i=0;i<m_InProgressOperations.Count;)
 			{
-				if (!m_InProgressOperations[i].Update())
-				{
+				if (!m_InProgressOperations[i].Update()) //直到update返回true，不然接着执行这个AssetBundleLoadOperation 的update（加载自己及依赖项目）
+                {
 					m_InProgressOperations.RemoveAt(i);
 				}
 				else
@@ -598,7 +598,7 @@ namespace AssetBundles
             AssetBundle bundle = null;
             if (!m_LoadedAssetBundles.ContainsKey(abname))
             {
-                byte[] stream = null;
+                //byte[] stream = null;
                 string uri;
                 if (abPath != "")
                 {
@@ -616,10 +616,10 @@ namespace AssetBundles
                     return null;
                 }
 
-                stream = File.ReadAllBytes(uri);
+                //stream = File.ReadAllBytes(uri);
 
-                bundle = AssetBundle.LoadFromMemory(stream);
-                stream = null;
+                bundle = AssetBundle.LoadFromFile(uri);
+                //stream = null;
                 LoadedAssetBundle loBundle = new LoadedAssetBundle(bundle);
           
                 m_LoadedAssetBundles.Add(abname, loBundle);

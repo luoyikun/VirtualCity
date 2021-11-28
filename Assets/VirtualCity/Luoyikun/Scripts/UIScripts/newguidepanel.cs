@@ -284,13 +284,14 @@ public class newguidepanel : MonoSingleton<newguidepanel>, ICanvasRaycastFilter
         //设置遮罩材料中中心变量
         Vector4 centerMat = new Vector4(center.x, center.y, 0, 0);
         _material = GetComponent<Image>().material;
-        _material.SetVector("_Center", centerMat);
+        _material.SetVector("_Center", centerMat); //传入要镂空矩形的中心点
         //计算当前偏移的初始值
         RectTransform canvasRectTransform = (m_canvas.transform as RectTransform);
         if (canvasRectTransform != null)
         {
             //获取画布区域的四个顶点
             canvasRectTransform.GetWorldCorners(_corners);
+            //它从左下开始，到左上， 然后到右上，最后到右下-->左下角开始逆时针旋转
             //求偏移初始值
             for (int i = 0; i < _corners.Length; i++)
             {
@@ -301,8 +302,8 @@ public class newguidepanel : MonoSingleton<newguidepanel>, ICanvasRaycastFilter
             }
         }
         //设置遮罩材质中当前偏移的变量
-        _material.SetFloat("_SliderX", _currentOffsetX);
-        _material.SetFloat("_SliderY", _currentOffsetY);
+        _material.SetFloat("_SliderX", _currentOffsetX);//设置离中心点最大的x距离
+        _material.SetFloat("_SliderY", _currentOffsetY);//设置离中心点最大的y距离
         m_isSetOk = true;
     }
     private void Start()

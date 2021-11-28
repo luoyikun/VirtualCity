@@ -22,7 +22,10 @@ public class ClickListener : MonoBehaviour, IPointerClickHandler
     {
         if (onClick != null)
         {
-            Audio_control.instance.palybut();
+            if (Audio_control.instance != null)
+            {
+                Audio_control.instance.palybut();
+            }
             onClick(gameObject);
         }
 

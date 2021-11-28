@@ -37,13 +37,13 @@ namespace AssetBundles
             configChanged = false;
             filterType = AssetBundleDispatcherFilterType.Root;
             targetAssetPath = AssetDatabase.GetAssetPath(target);
-            if (!AssetBundleUtility.IsPackagePath(targetAssetPath))
+            if (!AssetBundleUtility.IsPackagePath(targetAssetPath)) //如果不是打包路径不进行设置
             {
                 return;
             }
 
             packagePath = AssetBundleUtility.AssetsPathToPackagePath(targetAssetPath);
-            databaseAssetPath = AssetBundleInspectorUtils.AssetPathToDatabasePath(targetAssetPath);
+            databaseAssetPath = AssetBundleInspectorUtils.AssetPathToDatabasePath(targetAssetPath);//如果之前设置过，保存为.asset 文件，每个文件夹单独保存为一个asset
             dispatcherConfig = AssetDatabase.LoadAssetAtPath<AssetBundleDispatcherConfig>(databaseAssetPath);
             if (dispatcherConfig != null)
             {
@@ -65,7 +65,7 @@ namespace AssetBundles
                 var dir = Path.GetDirectoryName(databaseAssetPath);
                 GameUtility.CheckDirAndCreateWhenNeeded(dir);
 
-                var instance = CreateInstance<AssetBundleDispatcherConfig>();
+                var instance = CreateInstance<AssetBundleDispatcherConfig>(); //创建一个.asset 管理 这个文件夹配置
                 AssetDatabase.CreateAsset(instance, databaseAssetPath);
                 AssetDatabase.Refresh();
 

@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+//新手引导UI箭头出现的方向
 public enum EnGuideDir
 {
     up = 0,
@@ -14,12 +15,13 @@ public enum EnGuideDir
     right = 3  
 }
 
+//出现引导如何跳转下一步
 public enum EnGuideClick
 {
-    NoClickCloseSelf = 0,
-    Click = 1,
-    NoClickNoClose = 2,
-    ClickNeedNext = 3, // 可以点击但是要通过点击 下一步  驱动 ，针对输入框
+    NoClickCloseSelf = 0, //点击空白处关闭当前ui面板
+    Click = 1, //点击要引导的按个按钮
+    NoClickNoClose = 2, //点击空白处，只关闭引导mask，不关闭UI面板
+    ClickNeedNext = 3, // 可以点击但是要通过点击 "下一步"按钮  驱动 ，针对输入框
 }
 
 [System.Serializable]
@@ -30,8 +32,8 @@ public class NewGuideItem
     public string text;//提示的字
     public EnGuideClick isCanClick = EnGuideClick.Click; // 目标按钮可点击 1:可点  0：不可点，并关闭自己   2：不可点，不关闭自己
     public int isTextShowDir = -1; // 文本显示按钮的位置 -1 为下， 1为上   ,  2   
-    public int belongCanvas = 0; // 属于哪个ui 下   0：screen  1：top
-    public string bgPath; //  背景路径,新手引导的收缩至此
+    public int belongCanvas = 0; // 属于哪个ui canvas下   0：screen  1：top
+    public string bgPath; //  背景路径,新手引导的收缩至此，即这个区域是可点击区域，其他区域半透明黑色，屏蔽点击
     public int isAutoNext = 1; // 是否自动开始下步引导   0：不自动  1：自动
     public string param = ""; // 传入参数
 }
@@ -151,6 +153,11 @@ public class NewGuideMgr : MonoSingleton<NewGuideMgr>
         StartCoroutine(YieldDoNextNewGuide(delay));
     }
 
+    /// <summary>
+    /// 查找当前界面 是否 是当前的新手引导的第n步，如果找到了，执行引导遮罩
+    /// </summary>
+    /// <param name="delay"></param>
+    /// <returns></returns>
     IEnumerator YieldDoNextNewGuide(int delay)
     {
         yield return delay;
@@ -169,19 +176,11 @@ public class NewGuideMgr : MonoSingleton<NewGuideMgr>
             Debug.Log("transCanvas:" + transCanvas.name);
         }
         Transform trans = null;
-        //try
-        //{
-        //    trans = transCanvas.Find(item.panelName + "/" + item.imgPath);
-        //}
-        //catch
-        //{
-        //    Debug.Log("新手引导找不到：" + item.panelName + "/" + item.imgPath);
-        //}
 
         while (trans == null)
         {
             //Debug.Log("接着找");
-            yield return null;
+            yield return new WaitForSeconds(1);
             try
             {
                 Debug.Log("新手引导查找：" + item.panelName + "/" + item.imgPath);
@@ -199,8 +198,9 @@ public class NewGuideMgr : MonoSingleton<NewGuideMgr>
         {
             yield return null;
         }
-        trans.gameObject.AddComponent<DontDrag>();
+        trans.gameObject.AddComponent<DontDrag>(); //如果引导在滚动层上，加屏蔽滚动
 
+        //目标本身可点，击且点击后能驱动到下一步引导，m_curIdx+1，并接着引导
         if (item.isCanClick == EnGuideClick.Click && item.isAutoNext == 1)
         {
             while (trans.gameObject.GetComponent<ClickListener>() == null)
@@ -209,11 +209,12 @@ public class NewGuideMgr : MonoSingleton<NewGuideMgr>
             }
             trans.gameObject.GetComponent<ClickListener>().onNewGuideClick = (obj) =>
             {
-                StartOneNewGuide();
+                StartOneNewGuide(); 
                 trans.gameObject.GetComponent<ClickListener>().onNewGuideClick = null;
             };
         }
 
+        //目标本身可点击，点击后不能驱动下一步，新手引导暂停
         if (item.isCanClick == EnGuideClick.Click && item.isAutoNext == 0)
         {
             while (trans.gameObject.GetComponent<ClickListener>() == null)

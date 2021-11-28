@@ -73,6 +73,11 @@ public class homepanel : UGUIPanel {
         ClickListener.Get(Getrewards.transform.GetChild(5).gameObject).onClick = OnBtnRewardOpen;
         //ClickListener.Get(m_btn).onClick = OnBtnChat0;
         UiInitWhenOpen();
+
+        if (NewGuideDemo.m_isNewGuideDemo == true)
+        {
+            m_btnTiXian.SetActive(true);
+        }
     }
 
     public void OnBtnOtherBack(GameObject obj)
@@ -320,14 +325,20 @@ public class homepanel : UGUIPanel {
 
     public void UiInitWhenOpen()
     {
-        m_btnExitBuild.SetActive(false);
+        //m_btnExitBuild.SetActive(false);
         
-        if (DataMgr.m_account.hadProxy == 0)
+        if (DataMgr.m_account != null && DataMgr.m_account.hadProxy == 0)
         {
             m_btnTiXian.SetActive(true);
         }
         else {
-            m_btnTiXian.SetActive(false);
+            if (NewGuideDemo.m_isNewGuideDemo == true)
+            {
+                m_btnTiXian.SetActive(true);
+            }
+            else {
+                m_btnTiXian.SetActive(false);
+            }
         }
         m_rightDown.SetActive(true);
     }
@@ -452,13 +463,25 @@ public class homepanel : UGUIPanel {
         //{
         //    UIManager.Instance.PopSelf();
         //}
-        if (DataMgr.m_account.hadProxy == null || DataMgr.m_account.hadProxy == 0)
+        if (NewGuideDemo.m_isNewGuideDemo == false)
         {
-            UIManager.Instance.PushPanel(UIPanelName.dailiquanpanel, false, false, paragrm => { paragrm.GetComponent<dailiquanpanel>().OpenPanelWindows(0);
+            if (DataMgr.m_account.hadProxy == null || DataMgr.m_account.hadProxy == 0)
+            {
+                UIManager.Instance.PushPanel(UIPanelName.dailiquanpanel, false, false, paragrm =>
+                {
+                    paragrm.GetComponent<dailiquanpanel>().OpenPanelWindows(0);
+                    //NewGuideMgr.Instance.StartOneNewGuide();
+                });
+
+            }
+        }
+        else {
+            UIManager.Instance.PushPanel(UIPanelName.dailiquanpanel, false, false, paragrm =>
+            {
+                paragrm.GetComponent<dailiquanpanel>().OpenPanelWindows(0);
                 //NewGuideMgr.Instance.StartOneNewGuide();
             });
-            
-        } 
+        }
     }
 
     public void OnBtnRank(GameObject obj)

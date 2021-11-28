@@ -19,7 +19,6 @@ public class MouseOrbitImproved : MonoBehaviour
     public float distanceMax = 15f;
     public float zoomSpeed = 0.5f;
 
-    //private Rigidbody rigidbody;
 
     private float x = 0.0f;
     private float y = 0.0f;
@@ -46,13 +45,6 @@ public class MouseOrbitImproved : MonoBehaviour
         fx = x;
         fy = y;
 
-        //rigidbody = GetComponent<Rigidbody>();
-
-        //// Make the rigid body not change rotation
-        //if (rigidbody != null)
-        //{
-        //    rigidbody.freezeRotation = true;
-        //}
         UpdateRotaAndPos();
         fDistance = distance;
     }
@@ -60,9 +52,9 @@ public class MouseOrbitImproved : MonoBehaviour
     void Update()
     {
 
-        if (Input.touchCount == 0)
+        if (Input.touchCount == 0)//当前没有手指,全部初始化
         {
-            m_fingerId = -1; //当前没有手指
+            m_fingerId = -1; 
             m_dicTouch.Clear();
         }
 
@@ -78,6 +70,7 @@ public class MouseOrbitImproved : MonoBehaviour
                 }
             }
 
+            //删除m_dicTouch非当前单指的item项目--》得到结果就是m_dicTouch只有当前单指或者啥也没有
             for (int i = 0; i < deleteFinger.Count; i++)
             {
                 //Debug.Log("单指：删除：" + deleteFinger[i]);
@@ -90,7 +83,7 @@ public class MouseOrbitImproved : MonoBehaviour
                     if (EventSystem.current.IsPointerOverGameObject(Input.GetTouch(0).fingerId))
                     {
                         //Debug.Log("单指：增加true：" + Input.GetTouch(0).fingerId);
-                        m_dicTouch[Input.GetTouch(0).fingerId] = true;
+                        m_dicTouch[Input.GetTouch(0).fingerId] = true; //如果按在ui上为true
                     }
                     else
                     {
@@ -98,15 +91,7 @@ public class MouseOrbitImproved : MonoBehaviour
                         m_dicTouch[Input.GetTouch(0).fingerId] = false;
                     }
 
-                    //string debug = "";
-                    //foreach (var item in m_dicTouch)
-                    //{
-                    //    debug += item.Key;
-                    //    debug += ":";
-                    //    debug += item.Value;
-                    //    debug += "---";
-                    //}
-                    //Debug.Log(debug);
+                   
                     break;
                 case TouchPhase.Moved:
 
@@ -144,6 +129,7 @@ public class MouseOrbitImproved : MonoBehaviour
                 }
             }
 
+            //删除m_dicTouch里面非现在按下的两个手指--》得到的结果：m_dicTouch里有一个现在按下手指中的0-2个
             for (int i = 0; i < deleteFinger.Count; i++)
             {
                 //Debug.Log("双指：删除：" + deleteFinger[i]);
@@ -185,12 +171,13 @@ public class MouseOrbitImproved : MonoBehaviour
                 Touch touchZero = Input.GetTouch(0);
                 Touch touchOne = Input.GetTouch(1);
 
-                // Find the position in the previous frame of each touch.
+                // 上一帧每个点位置
                 Vector2 touchZeroPrevPos = touchZero.position - touchZero.deltaPosition;
                 Vector2 touchOnePrevPos = touchOne.position - touchOne.deltaPosition;
 
-                // Find the magnitude of the vector (the distance) between the touches in each frame.
+                //上一帧两点距离的平方，不要做平方根运算，消耗大
                 float prevTouchDeltaMag = (touchZeroPrevPos - touchOnePrevPos).magnitude;
+                //这一帧两点距离的平方
                 float touchDeltaMag = (touchZero.position - touchOne.position).magnitude;
 
                 // Find the difference in the distances between each frame.
@@ -226,7 +213,7 @@ public class MouseOrbitImproved : MonoBehaviour
                 {
                     if (Input.touches[i].fingerId == m_fingerId)
                     {
-                        input = Input.touches[i];
+                        input = Input.touches[i];//找到控制镜头移动的手指
                     }
                 }
                 if (target)
@@ -293,7 +280,7 @@ public class MouseOrbitImproved : MonoBehaviour
             bool isCurHit = false;
             Quaternion rotation = Quaternion.Euler(fy, fx, 0);
             Vector3 negDistance = new Vector3(0.0f, 0.0f, -distance);
-            Vector3 position = rotation * negDistance + target.position;
+            Vector3 position = rotation * negDistance + target.position; //摄像头的位置为 移动后角度*距离 + 目标位置
 
             Vector3 canSetPos = position;
 
@@ -369,10 +356,14 @@ public class MouseOrbitImproved : MonoBehaviour
         return Mathf.Clamp(angle, min, max);
     }
 
+    /// <summary>
+    /// 是否可以选择
+    /// </summary>
+    /// <returns></returns>
     bool IsCanRotate()
     {
         bool ret = false;
-        if (m_dicTouch.Count == 1)
+        if (m_dicTouch.Count == 1) //只有一个手指按下，并且没按在UI上
         {
             foreach (var item in m_dicTouch)
             {
@@ -384,6 +375,7 @@ public class MouseOrbitImproved : MonoBehaviour
             }
         }
         else {
+            //当有两个手指按下，一个手指在UI（包含在UI摇杆）上，一个手指没在，可以移动镜头
             int inUI = 0;
             int outUI = 0;
             foreach (var item in m_dicTouch)
@@ -406,6 +398,7 @@ public class MouseOrbitImproved : MonoBehaviour
         return ret;
     }
 
+    //何时才能双指控制缩放-->两个手指都没按在UI上
     bool IsCanScale()
     {
         bool ret = true;

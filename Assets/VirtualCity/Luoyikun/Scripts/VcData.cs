@@ -28,7 +28,7 @@ public class VcData : SingletonMono<VcData>
             }
             return;
         }
-        Instance.StartCoroutine(LoadDataSync(varFinish));
+
     }
 
     public IEnumerator LoadDataSync(System.Action varFinish = null)
