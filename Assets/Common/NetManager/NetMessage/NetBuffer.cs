@@ -293,6 +293,8 @@ namespace SGF.Network.Core
             m_buff[pos + 1] = (byte)(value >> 0 & 0xFF);
             return pos + 2;
         }
+
+        //将int数值转换为占四个字节的byte数组，本方法适用于(高位在前，低位在后)的顺序
         public int WriteInt(int value, int writePos = -1)
         {
             int pos = UpdateLenAndGetWritePos(writePos, 4);

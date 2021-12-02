@@ -155,24 +155,24 @@ namespace Net
             msg.head.packetLength = 2 + 2 + msgObj.Length;
             SendMsg(msg);
         }
-
+        byte[] m_sendBuf = new byte[4096];
         public void SendMsg(NetMessage netMsg, EnSocket type = EnSocket.Game)
         {
-            byte[] tmp = null;
-            int len = netMsg.Serialize(out tmp);
-            byte[] buf1 = new byte[len];
-            Array.Copy(tmp, buf1, len);
+            //byte[] tmp = null;
+            int len = netMsg.Serialize(out m_sendBuf);
+            //byte[] buf1 = new byte[len];
+            //Array.Copy(tmp, buf1, len);
 
             switch (type)
             {
                 case EnSocket.Hall:
-                    socketClient.SendMsg(buf1);
+                    socketClient.SendMsg(m_sendBuf, len);
                     break;
                 case EnSocket.Game:
-                    gameSocket.SendMsg(buf1);
+                    gameSocket.SendMsg(m_sendBuf, len);
                     break;
                 case EnSocket.Chat:
-                    chatSocket.SendMsg(buf1);
+                    chatSocket.SendMsg(m_sendBuf, len);
                     break;
                 default:
                     break;

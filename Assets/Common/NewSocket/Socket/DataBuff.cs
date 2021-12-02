@@ -35,9 +35,9 @@ public struct sSocketData
 public class DataBuffer
 {//自动大小数据缓存器
     private int _minBuffLen;
-    private byte[] _buff;
+    private byte[] _buff; //待处理字节流:网络接收到数据，往这里塞；多了，会扩容；每次处理完一条完整协议a，截取掉前面a所有的数据后，尾部的未处理直接流又组成新的_buff
     private int _curBuffPosition;
-    private int _buffLength = 0;
+    private int _buffLength = 0; //提取出的
     private int _dataLength;
     private UInt16 _protocalType;
     public string m_key = "";
@@ -65,15 +65,15 @@ public class DataBuffer
     /// <param name="_dataLen"></param>
     public void AddBuffer(byte[] _data, int _dataLen)
     {
-        if (_dataLen > _buff.Length - _curBuffPosition)//超过当前缓存
+        if (_dataLen > _buff.Length - _curBuffPosition)//接收的长度，要塞入_buff中，_buff剩余容量不够，扩容
         {
             byte[] _tmpBuff = new byte[_curBuffPosition + _dataLen];
             Array.Copy(_buff, 0, _tmpBuff, 0, _curBuffPosition);
             Array.Copy(_data, 0, _tmpBuff, _curBuffPosition, _dataLen);
-            _buff = _tmpBuff;
+            _buff = _tmpBuff; //生成新的扩容后_buff
             _tmpBuff = null;
         }
-        else
+        else //剩余空间还够，直接塞入
         {
             Array.Copy(_data, 0, _buff, _curBuffPosition, _dataLen);
         }
@@ -87,24 +87,25 @@ public class DataBuffer
     {
         if (_dataLength == 0 && _curBuffPosition >= Constants.HEAD_LEN)
         {
+            //从0号位提取4位包长字节流
             byte[] tmpDataLen = new byte[Constants.HEAD_DATA_LEN];
             Array.Copy(_buff, 0, tmpDataLen, 0, Constants.HEAD_DATA_LEN);
-
-            
+            //小端接收，要转换下，转换位包长int
             _buffLength = BitConverter.ToInt32(NetBuffer.ReverseOrder(tmpDataLen), 0)+4; //得到包长度
 
+            //提取moudleID
             byte[] tmpProtocalType = new byte[Constants.HEAD_TYPE_LEN];
             Array.Copy(_buff, Constants.HEAD_DATA_LEN, tmpProtocalType, 0, Constants.HEAD_TYPE_LEN);
-            //_protocalType = BitConverter.ToUInt16(tmpProtocalType, 0);
-
             ushort module = BitConverter.ToUInt16(NetBuffer.ReverseOrder(tmpProtocalType), 0);
 
+            //提取cmdID
             byte[] tmpCmd = new byte[Constants.HEAD_TYPE_LEN];
             Array.Copy(_buff, Constants.HEAD_DATA_LEN + Constants.HEAD_TYPE_LEN, tmpCmd, 0, Constants.HEAD_TYPE_LEN);
             ushort cmd = BitConverter.ToUInt16(NetBuffer.ReverseOrder(tmpCmd), 0);
 
             m_key = module.ToString() + "," + cmd.ToString();
 
+            //内容字节流为全长度 - （4+2+2）
             _dataLength = _buffLength - Constants.HEAD_LEN;
         }
     }
@@ -118,6 +119,7 @@ public class DataBuffer
     {
         _tmpSocketData = new sSocketData();
 
+        //_buffLength如果没提取过为 0 ，提取一次，取全包长（4+2+2+内容字节流），使用后又重置为 0 
         if (_buffLength <= 0)
         {
             UpdateDataLength();
@@ -130,11 +132,11 @@ public class DataBuffer
             _tmpSocketData._protocallType = (eProtocalCommand)_protocalType;
             _tmpSocketData.key = m_key;
             _tmpSocketData._data = new byte[_dataLength];
-            Array.Copy(_buff, Constants.HEAD_LEN, _tmpSocketData._data, 0, _dataLength);
-            _curBuffPosition -= _buffLength;
+            Array.Copy(_buff, Constants.HEAD_LEN, _tmpSocketData._data, 0, _dataLength); //_buff 中从 （4+2+2）开始，复制给内容字节流
+            _curBuffPosition -= _buffLength; //当前接收到一条网络数据流里还未处理完的字节流 长度 =  总长度（当前长度） - _buffLength（一条完整数据长度）
             byte[] _tmpBuff = new byte[_curBuffPosition < _minBuffLen ? _minBuffLen : _curBuffPosition];
             Array.Copy(_buff, _buffLength, _tmpBuff, 0, _curBuffPosition);
-            _buff = _tmpBuff;
+            _buff = _tmpBuff; //重新复制新的待处理字节流
 
 
             _buffLength = 0;

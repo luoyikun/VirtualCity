@@ -259,7 +259,7 @@ namespace Net
                 }
                 try
                 {
-                    int receiveLength = clientSocket.Receive(_tmpReceiveBuff);
+                    int receiveLength = clientSocket.Receive(_tmpReceiveBuff); //每次只要有数据来了，就写入到_tmpReceiveBuff中，返回接收到的长度
                     if (receiveLength > 0)
                     {
                         _databuffer.AddBuffer(_tmpReceiveBuff, receiveLength);//将收到的数据添加到缓存器中
@@ -516,14 +516,15 @@ namespace Net
             
         }
 
+        byte[] m_sendBuf = new byte[4096];
         public void SendMsg(NetMessage netMsg, EnSocket type = EnSocket.Game)
         {
-            byte[] tmp = null;
-            int len = netMsg.Serialize(out tmp);
-            byte[] buf1 = new byte[len];
-            Array.Copy(tmp, buf1, len);
+            //byte[] tmp = null;
+            int len = netMsg.Serialize(out m_sendBuf);
+            //byte[] buf1 = new byte[len];
+            //Array.Copy(tmp, buf1, len);
 
-            clientSocket.BeginSend(buf1, 0, buf1.Length, SocketFlags.None, new AsyncCallback(_onSendMsg), clientSocket);
+            clientSocket.BeginSend(m_sendBuf, 0, len, SocketFlags.None, new AsyncCallback(_onSendMsg), clientSocket);
         }
 
 

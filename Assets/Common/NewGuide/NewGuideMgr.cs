@@ -180,11 +180,15 @@ public class NewGuideMgr : MonoSingleton<NewGuideMgr>
         while (trans == null)
         {
             //Debug.Log("接着找");
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(0.2f);
             try
             {
-                Debug.Log("新手引导查找：" + item.panelName + "/" + item.imgPath);
+                
                 trans = transCanvas.Find(item.panelName + "/" + item.imgPath);
+                if (trans != null)
+                {
+                    Debug.Log("新手引导找到了：" + item.panelName + "/" + item.imgPath);
+                }
             }
             catch
             {

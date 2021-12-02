@@ -96,14 +96,14 @@ public class SocketClient
     /// <summary>
     /// 写数据
     /// </summary>
-    void WriteMessage(byte[] message)
+    void WriteMessage(byte[] message,int len)
     {
         MemoryStream ms = null;
         using (ms = new MemoryStream())
         {
             ms.Position = 0;
             BinaryWriter writer = new BinaryWriter(ms);
-            writer.Write(message);
+            writer.Write(message,0,len);
             writer.Flush();
             if (client != null && client.Connected)
             {
@@ -276,9 +276,9 @@ public class SocketClient
     /// <summary>
     /// 会话发送
     /// </summary>
-    void SessionSend(byte[] bytes)
+    void SessionSend(byte[] bytes,int len)
     {
-        WriteMessage(bytes);
+        WriteMessage(bytes,len);
     }
 
     /// <summary>
@@ -306,12 +306,13 @@ public class SocketClient
     /// </summary>
     public void SendMessage(ByteBuffer buffer)
     {
-        SessionSend(buffer.ToBytes());
+        byte[] buf = buffer.ToBytes();
+        SessionSend(buf, buf.Length);
         buffer.Close();
     }
 
-    public void SendMsg(byte[] bytes)
+    public void SendMsg(byte[] bytes,int len)
     {
-        SessionSend(bytes);
+        SessionSend(bytes,len);
     }
 }
