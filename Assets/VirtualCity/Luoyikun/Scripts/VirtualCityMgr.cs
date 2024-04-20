@@ -1,4 +1,4 @@
-﻿#define EditorLoadAb
+﻿//#define EditorLoadAb //是否编辑器下加载真实ab
 
 using Framework.UI;
 using System.Collections.Generic;

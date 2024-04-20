@@ -52,10 +52,19 @@ public static class CheckAssetBundles
         {
             count++;
             var assetPath = AssetDatabase.GUIDToAssetPath(guid);
-            var config = AssetDatabase.LoadAssetAtPath<AssetBundleDispatcherConfig>(assetPath);
-            config.Load();
-            EditorUtility.DisplayProgressBar("Run checker :", config.PackagePath, (float)count / length);
-            AssetBundleDispatcher.Run(config, checkChannel);
+            if (string.IsNullOrEmpty(assetPath) == false)
+            {
+                var config = AssetDatabase.LoadAssetAtPath<AssetBundleDispatcherConfig>(assetPath);
+                if (config != null)
+                {
+                    config.Load();
+                    if (string.IsNullOrEmpty(config.PackagePath) == false)
+                    {
+                        EditorUtility.DisplayProgressBar("Run checker :", config.PackagePath, (float)count / length);
+                        AssetBundleDispatcher.Run(config, checkChannel);
+                    }
+                }
+            }
         }
         AssetDatabase.Refresh();
         EditorUtility.ClearProgressBar();

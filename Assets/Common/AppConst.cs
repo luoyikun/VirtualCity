@@ -11,7 +11,7 @@ public enum EnTestServer
     Out//外网正式
 }
 public class AppConst {
-    public static bool m_isOffline = false; 
+    public static bool m_isOffline = true; 
     //打包用切换内外网
     public const EnTestServer m_enTestServer = EnTestServer.OutTest;
 
@@ -78,7 +78,7 @@ public class AppConst {
     public string m_ipGame;
     public string m_portGame;
 
-    public const bool m_isUpdateRes = true; // 是否从服务器更新资源
+    public const bool m_isUpdateRes = false; // 是否从服务器更新资源
   
     
     public const bool DebugMode = true;                       //调试模式-用于内部测试，执行热更新用
